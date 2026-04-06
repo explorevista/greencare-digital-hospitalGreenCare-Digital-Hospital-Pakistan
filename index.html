@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-PK">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
-  <!-- 🔵 SEO & META TAGS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GreenCare Digital Hospital Pakistan | Book Trusted Doctors Online</title>
-  <meta name="description" content="Pakistan's premier digital healthcare platform. Book appointments with verified doctors in Karachi, Lahore, Islamabad & Peshawar. AI symptom checker, secure payments, instant confirmation."/>
-  <meta name="keywords" content="doctor appointment Pakistan, online doctor consultation, telemedicine Karachi, book doctor Lahore, healthcare Pakistan"/>
-  <meta name="author" content="Muhammad Ali, GreenCare Digital Hospital"/>
-  <meta name="robots" content="index, follow"/>
+  <meta name="description" content="Pakistan's premier digital healthcare platform. Book appointments with verified doctors in Karachi, Lahore, Islamabad & Peshawar. AI symptom checker, secure payments, instant confirmation.">
+  <meta name="keywords" content="doctor appointment Pakistan, online doctor consultation, telemedicine Karachi, book doctor Lahore, healthcare Pakistan">
+  <meta name="author" content="Muhammad Ali, GreenCare Digital Hospital">
+  <meta name="robots" content="index, follow">
   
-  <!-- 🔴 GOOGLE ADSENSE VERIFICATION (CRITICAL FOR APPROVAL) -->
+  <!-- 🔴 GOOGLE ADSENSE VERIFICATION -->
   <meta name="google-adsense-account" content="ca-pub-7495097418204600">
   
   <!-- 🔵 OPENGRAPH / SOCIAL -->
-  <meta property="og:title" content="GreenCare Digital Hospital Pakistan"/>
-  <meta property="og:description" content="Connect with trusted doctors across Pakistan. Easy online booking, AI assistance, secure payments."/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://health-stack--toolmax36.replit.app"/>
-  <meta property="og:image" content="https://health-stack--toolmax36.replit.app/og-image.jpg"/>
+  <meta property="og:title" content="GreenCare Digital Hospital Pakistan">
+  <meta property="og:description" content="Connect with trusted doctors across Pakistan. Easy online booking, AI assistance, secure payments.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://health-stack--toolmax36.replit.app">
+  <meta property="og:image" content="https://health-stack--toolmax36.replit.app/og-image.jpg">
   
-  <!-- 🔵 GOOGLE ANALYTICS GA4 (ALL IDs INCLUDED) -->
+  <!-- 🔵 GOOGLE ANALYTICS GA4 (ALL IDs) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1K3WJGFTTT"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -31,568 +29,162 @@
     gtag('config', 'G-J0WFDWHY3C');
     gtag('config', 'G-3FG0VBDT1L');
     gtag('config', 'G-ZN2FYTX2ZY');
+    gtag('config', 'G-KGTFZRD1Q3');
   </script>
   
-  <!-- 🔴 GOOGLE ADSENSE SCRIPT (PRODUCTION READY) -->
+  <!-- 🔴 GOOGLE ADSENSE SCRIPT -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495097418204600" crossorigin="anonymous"></script>
   
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-  
-  <!-- Firebase SDK (Compat version for single-file deployment) -->
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <style>
-    :root {
-      --bg-primary: #f8fafc;
-      --bg-secondary: #ffffff;
-      --bg-glass: rgba(255, 255, 255, 0.85);
-      --text-primary: #1e293b;
-      --text-secondary: #475569;
-      --accent-primary: #10b981;
-      --accent-secondary: #059669;
-      --accent-hover: #047857;
-      --border-color: #e2e8f0;
-      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-      --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-      --gradient-primary: linear-gradient(135deg, #10b981 0%, #059669 100%);
-      --gradient-hero: linear-gradient(135deg, #065f46 0%, #047857 50%, #10b981 100%);
-      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      --radius-sm: 8px;
-      --radius-md: 12px;
-      --radius-lg: 20px;
-      --radius-full: 9999px;
-    }
-
-    [data-theme="dark"] {
-      --bg-primary: #0f172a;
-      --bg-secondary: #1e293b;
-      --bg-glass: rgba(30, 41, 59, 0.85);
-      --text-primary: #f1f5f9;
-      --text-secondary: #cbd5e1;
-      --accent-primary: #10b981;
-      --accent-secondary: #059669;
-      --accent-hover: #34d399;
-      --border-color: #334155;
-      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
-      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
-      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.4);
-      --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
-      --gradient-primary: linear-gradient(135deg, #059669 0%, #047857 100%);
-      --gradient-hero: linear-gradient(135deg, #022c22 0%, #065f46 50%, #10b981 100%);
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; font-size: 16px; }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--bg-primary);
-      color: var(--text-primary);
-      line-height: 1.6;
-      transition: var(--transition);
-      overflow-x: hidden;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Poppins', 'Inter', sans-serif;
-      font-weight: 700;
-      line-height: 1.2;
-      margin-bottom: 0.5em;
-    }
-    a { text-decoration: none; color: inherit; transition: var(--transition); }
-    button { font-family: inherit; cursor: pointer; border: none; background: none; }
-    img { max-width: 100%; height: auto; display: block; }
-    
-    .container { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
-    .section { padding: 5rem 0; }
-    .section-title { text-align: center; margin-bottom: 3rem; }
-    .section-title h2 {
-      font-size: 2.25rem;
-      background: var(--gradient-primary);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      display: inline-block;
-    }
-    .section-title p { color: var(--text-secondary); max-width: 600px; margin: 1rem auto 0; font-size: 1.1rem; }
-
-    /* ========== GLASSMORPHISM NAVBAR ========== */
-    .navbar {
-      position: sticky; top: 0; z-index: 1000;
-      background: var(--bg-glass);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border-color);
-      box-shadow: var(--shadow-md);
-      transition: var(--transition);
-    }
-    .navbar-container {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 1rem 1.5rem; max-width: 1280px; margin: 0 auto;
-    }
-    .logo {
-      display: flex; align-items: center; gap: 0.75rem;
-      font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.5rem;
-      color: var(--accent-primary);
-    }
-    .logo-icon {
-      width: 40px; height: 40px; background: var(--gradient-primary);
-      border-radius: var(--radius-md); display: flex; align-items: center;
-      justify-content: center; color: white; font-weight: 700; font-size: 1.2rem;
-    }
-    .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
-    .nav-links a {
-      font-weight: 500; position: relative; padding: 0.5rem 0;
-    }
-    .nav-links a::after {
-      content: ''; position: absolute; bottom: 0; left: 0;
-      width: 0; height: 2px; background: var(--gradient-primary);
-      transition: var(--transition); border-radius: var(--radius-full);
-    }
-    .nav-links a:hover::after { width: 100%; }
-    .nav-actions { display: flex; align-items: center; gap: 1rem; }
-    .theme-toggle, .hamburger {
-      width: 44px; height: 44px; border-radius: var(--radius-full);
-      display: flex; align-items: center; justify-content: center;
-      background: var(--bg-secondary); border: 1px solid var(--border-color);
-      color: var(--text-primary); transition: var(--transition); font-size: 1.2rem;
-    }
-    .theme-toggle:hover, .hamburger:hover {
-      background: var(--accent-primary); color: white;
-      transform: translateY(-2px); box-shadow: var(--shadow-md);
-    }
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
-      padding: 0.875rem 1.5rem; background: var(--gradient-primary);
-      color: white; font-weight: 600; border-radius: var(--radius-full);
-      transition: var(--transition); box-shadow: var(--shadow-md);
-    }
-    .btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
-    .btn-outline {
-      background: transparent; border: 2px solid var(--accent-primary);
-      color: var(--accent-primary);
-    }
-    .btn-outline:hover { background: var(--accent-primary); color: white; }
-    .btn-sm { padding: 0.625rem 1.25rem; font-size: 0.875rem; }
-    .hamburger { display: none; }
-
-    /* ========== HERO SECTION ========== */
-    .hero {
-      background: var(--gradient-hero); color: white;
-      padding: 6rem 0 4rem; position: relative; overflow: hidden;
-    }
-    .hero::before {
-      content: ''; position: absolute; top: -50%; right: -20%;
-      width: 600px; height: 600px;
-      background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
-      border-radius: 50%; animation: float 8s ease-in-out infinite;
-    }
-    .hero::after {
-      content: ''; position: absolute; bottom: -30%; left: -10%;
-      width: 400px; height: 400px;
-      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-      border-radius: 50%; animation: float 10s ease-in-out infinite reverse;
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0) scale(1); }
-      50% { transform: translateY(-20px) scale(1.05); }
-    }
-    .hero-content {
-      position: relative; z-index: 2; text-align: center;
-      max-width: 800px; margin: 0 auto; padding: 0 1.5rem;
-    }
-    .hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; animation: fadeInUp 0.8s ease-out; }
-    .hero p { font-size: 1.25rem; opacity: 0.95; margin-bottom: 2rem; animation: fadeInUp 0.8s ease-out 0.2s both; }
-    .hero-buttons {
-      display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
-      animation: fadeInUp 0.8s ease-out 0.4s both;
-    }
-    .hero-stats { display: flex; justify-content: center; gap: 2rem; margin-top: 3rem; flex-wrap: wrap; }
-    .stat-item { text-align: center; }
-    .stat-number { font-size: 2rem; font-weight: 800; display: block; }
-    .stat-label { opacity: 0.9; font-size: 0.9rem; }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ========== DOCTORS SECTION ========== */
-    .doctors-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 1.5rem;
-    }
-    .doctor-card {
-      background: var(--bg-secondary); border-radius: var(--radius-lg);
-      overflow: hidden; box-shadow: var(--shadow-md);
-      transition: var(--transition); border: 1px solid var(--border-color);
-      display: flex; flex-direction: column;
-    }
-    .doctor-card:hover {
-      transform: translateY(-8px); box-shadow: var(--shadow-lg);
-      border-color: var(--accent-primary);
-    }
-    .doctor-header {
-      padding: 1.5rem; border-bottom: 1px solid var(--border-color);
-      display: flex; align-items: center; gap: 1rem;
-    }
-    .doctor-avatar {
-      width: 72px; height: 72px; border-radius: var(--radius-full);
-      background: var(--gradient-primary); display: flex;
-      align-items: center; justify-content: center;
-      color: white; font-weight: 700; font-size: 1.5rem; flex-shrink: 0;
-    }
-    .doctor-info h3 { font-size: 1.25rem; margin-bottom: 0.25rem; }
-    .doctor-location {
-      color: var(--text-secondary); font-size: 0.9rem;
-      display: flex; align-items: center; gap: 0.3rem;
-    }
-    .doctor-body { padding: 1.5rem; flex-grow: 1; }
-    .doctor-fee {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);
-      margin-bottom: 1rem;
-    }
-    .fee-label { color: var(--text-secondary); }
-    .fee-amount { font-weight: 700; color: var(--accent-primary); font-size: 1.25rem; }
-    .doctor-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
-    .doctor-actions .btn { flex: 1; min-width: 120px; }
-    .skeleton {
-      background: linear-gradient(90deg, var(--bg-secondary) 25%, var(--border-color) 50%, var(--bg-secondary) 75%);
-      background-size: 200% 100%; animation: loading 1.5s infinite;
-      border-radius: var(--radius-sm);
-    }
-    @keyframes loading {
-      0% { background-position: 200% 0; }
-      100% { background-position: -200% 0; }
-    }
-
-    /* ========== MODALS ========== */
-    .modal {
-      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.6); display: flex;
-      align-items: center; justify-content: center; z-index: 2000;
-      opacity: 0; visibility: hidden; transition: var(--transition); padding: 1rem;
-    }
-    .modal.active { opacity: 1; visibility: visible; }
-    .modal-content {
-      background: var(--bg-secondary); border-radius: var(--radius-lg);
-      width: 100%; max-width: 500px; max-height: 90vh; overflow-y: auto;
-      box-shadow: var(--shadow-lg); transform: translateY(20px);
-      transition: var(--transition); border: 1px solid var(--border-color);
-    }
-    .modal.active .modal-content { transform: translateY(0); }
-    .modal-header {
-      padding: 1.5rem; border-bottom: 1px solid var(--border-color);
-      display: flex; justify-content: space-between; align-items: center;
-    }
-    .modal-close {
-      width: 36px; height: 36px; border-radius: var(--radius-full);
-      display: flex; align-items: center; justify-content: center;
-      background: var(--bg-primary); color: var(--text-primary);
-      transition: var(--transition);
-    }
-    .modal-close:hover { background: var(--accent-primary); color: white; }
-    .modal-body { padding: 1.5rem; }
-    .form-group { margin-bottom: 1.25rem; }
-    .form-group label {
-      display: block; margin-bottom: 0.5rem; font-weight: 500;
-      color: var(--text-secondary);
-    }
-    .form-control {
-      width: 100%; padding: 0.875rem 1rem; border: 1px solid var(--border-color);
-      border-radius: var(--radius-md); background: var(--bg-primary);
-      color: var(--text-primary); font-size: 1rem; transition: var(--transition);
-    }
-    .form-control:focus {
-      outline: none; border-color: var(--accent-primary);
-      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
-    }
-    .booking-success { text-align: center; padding: 2rem 1rem; }
-    .success-icon {
-      width: 80px; height: 80px; background: var(--gradient-primary);
-      border-radius: var(--radius-full); display: flex;
-      align-items: center; justify-content: center;
-      margin: 0 auto 1.5rem; color: white; font-size: 2rem;
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-      100% { transform: scale(1); }
-    }
-    .booking-details {
-      background: var(--bg-primary); border-radius: var(--radius-md);
-      padding: 1rem; margin: 1.5rem 0; text-align: left;
-    }
-    .booking-details p {
-      display: flex; justify-content: space-between;
-      padding: 0.5rem 0; border-bottom: 1px dashed var(--border-color);
-    }
-    .booking-details p:last-child { border-bottom: none; }
-
-    /* ========== PAYMENT ========== */
-    .payment-methods {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem; margin: 1.5rem 0;
-    }
-    .payment-card {
-      background: var(--bg-primary); border: 2px solid var(--border-color);
-      border-radius: var(--radius-md); padding: 1.25rem;
-      text-align: center; transition: var(--transition); cursor: pointer;
-    }
-    .payment-card:hover, .payment-card.selected {
-      border-color: var(--accent-primary);
-      background: rgba(16, 185, 129, 0.05);
-    }
-    .payment-card h4 { margin: 0.5rem 0; color: var(--accent-primary); }
-    .payment-number {
-      font-family: monospace; font-size: 1.1rem; font-weight: 600;
-      margin: 0.5rem 0; letter-spacing: 1px;
-    }
-    .copy-btn {
-      background: var(--bg-secondary); border: 1px solid var(--border-color);
-      padding: 0.375rem 0.75rem; border-radius: var(--radius-sm);
-      font-size: 0.8rem; margin-top: 0.5rem; transition: var(--transition);
-    }
-    .copy-btn:hover { background: var(--accent-primary); color: white; }
-    .upload-area {
-      border: 2px dashed var(--border-color); border-radius: var(--radius-md);
-      padding: 2rem; text-align: center; margin: 1rem 0;
-      cursor: pointer; transition: var(--transition);
-    }
-    .upload-area:hover {
-      border-color: var(--accent-primary);
-      background: rgba(16, 185, 129, 0.05);
-    }
-    .upload-area.dragover {
-      border-color: var(--accent-primary);
-      background: rgba(16, 185, 129, 0.1);
-    }
-
-    /* ========== AI CHATBOT ========== */
-    .chatbot-toggle {
-      position: fixed; bottom: 2rem; right: 2rem;
-      width: 60px; height: 60px; border-radius: var(--radius-full);
-      background: var(--gradient-primary); color: white;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.5rem; box-shadow: var(--shadow-lg); z-index: 1500;
-      transition: var(--transition); animation: bounce 2s infinite;
-    }
-    .chatbot-toggle:hover { transform: scale(1.1); }
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-    .chatbot {
-      position: fixed; bottom: 5.5rem; right: 2rem;
-      width: 380px; max-width: calc(100vw - 4rem);
-      height: 500px; max-height: calc(100vh - 8rem);
-      background: var(--bg-secondary); border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-lg); display: flex; flex-direction: column;
-      z-index: 1500; opacity: 0; visibility: hidden;
-      transform: translateY(20px); transition: var(--transition);
-      border: 1px solid var(--border-color);
-    }
-    .chatbot.active {
-      opacity: 1; visibility: visible; transform: translateY(0);
-    }
-    .chatbot-header {
-      padding: 1rem 1.25rem; border-bottom: 1px solid var(--border-color);
-      display: flex; justify-content: space-between; align-items: center;
-      background: var(--gradient-primary); color: white;
-      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-    }
-    .chatbot-title {
-      font-weight: 600; display: flex; align-items: center; gap: 0.5rem;
-    }
-    .chatbot-messages {
-      flex: 1; padding: 1rem; overflow-y: auto;
-      display: flex; flex-direction: column; gap: 1rem;
-    }
-    .message {
-      max-width: 85%; padding: 0.875rem 1rem;
-      border-radius: var(--radius-md); line-height: 1.5;
-    }
-    .message.bot {
-      align-self: flex-start; background: var(--bg-primary);
-      border-bottom-left-radius: 4px;
-    }
-    .message.user {
-      align-self: flex-end; background: var(--gradient-primary);
-      color: white; border-bottom-right-radius: 4px;
-    }
-    .chatbot-input {
-      padding: 1rem; border-top: 1px solid var(--border-color);
-      display: flex; gap: 0.75rem;
-    }
-    .chatbot-input input {
-      flex: 1; padding: 0.75rem 1rem; border: 1px solid var(--border-color);
-      border-radius: var(--radius-full); background: var(--bg-primary);
-      color: var(--text-primary);
-    }
-    .chatbot-input button {
-      width: 44px; height: 44px; border-radius: var(--radius-full);
-      background: var(--gradient-primary); color: white;
-      display: flex; align-items: center; justify-content: center;
-      transition: var(--transition);
-    }
-    .chatbot-input button:hover { transform: scale(1.05); }
-    .voice-btn {
-      background: var(--bg-primary) !important;
-      color: var(--accent-primary); border: 1px solid var(--border-color);
-    }
-
-    /* ========== FOOTER ========== */
-    .footer {
-      background: var(--bg-secondary); border-top: 1px solid var(--border-color);
-      padding: 3rem 0 1.5rem; margin-top: 4rem;
-    }
-    .footer-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-    }
-    .footer-brand .logo { margin-bottom: 1rem; }
-    .footer-brand p { color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.95rem; }
-    .contact-item {
-      display: flex; align-items: center; gap: 0.75rem;
-      margin-bottom: 0.75rem; color: var(--text-secondary);
-    }
-    .social-links { display: flex; gap: 0.75rem; margin-top: 1rem; }
-    .social-links a {
-      width: 40px; height: 40px; border-radius: var(--radius-full);
-      background: var(--bg-primary); display: flex;
-      align-items: center; justify-content: center;
-      color: var(--text-primary); transition: var(--transition);
-      border: 1px solid var(--border-color);
-    }
-    .social-links a:hover {
-      background: var(--accent-primary); color: white;
-      transform: translateY(-3px);
-    }
-    .footer-links h4 { margin-bottom: 1rem; font-size: 1.1rem; }
-    .footer-links ul { list-style: none; }
-    .footer-links li { margin-bottom: 0.5rem; }
-    .footer-links a { color: var(--text-secondary); transition: var(--transition); }
-    .footer-links a:hover { color: var(--accent-primary); padding-left: 4px; }
-    .footer-bottom {
-      text-align: center; padding-top: 2rem; margin-top: 2rem;
-      border-top: 1px solid var(--border-color); color: var(--text-secondary);
-      font-size: 0.9rem;
-    }
-    .smartverse-section {
-      background: var(--bg-primary); padding: 1.5rem;
-      border-radius: var(--radius-md); margin-top: 2rem;
-      text-align: center; border: 1px solid var(--border-color);
-    }
-    .smartverse-links {
-      display: flex; justify-content: center; gap: 1rem;
-      flex-wrap: wrap; margin-top: 1rem;
-    }
-    .smartverse-links a {
-      color: var(--accent-primary); font-weight: 500;
-      transition: var(--transition);
-    }
-    .smartverse-links a:hover { text-decoration: underline; }
-
-    /* ========== TOAST ========== */
-    .toast-container {
-      position: fixed; top: 1rem; right: 1rem; z-index: 3000;
-      display: flex; flex-direction: column; gap: 0.75rem;
-      max-width: 350px;
-    }
-    .toast {
-      background: var(--bg-secondary); border-left: 4px solid var(--accent-primary);
-      border-radius: var(--radius-md); padding: 1rem 1.25rem;
-      box-shadow: var(--shadow-lg); display: flex;
-      align-items: center; gap: 0.75rem; animation: slideIn 0.3s ease-out;
-      border: 1px solid var(--border-color);
-    }
-    .toast.error { border-left-color: #ef4444; }
-    .toast.success { border-left-color: #10b981; }
-    @keyframes slideIn {
-      from { transform: translateX(100%); opacity: 0; }
-      to { transform: translateX(0); opacity: 1; }
-    }
-
-    /* ========== RESPONSIVE ========== */
-    @media (max-width: 1024px) { .hero h1 { font-size: 2.75rem; } }
-    @media (max-width: 768px) {
-      .nav-links {
-        position: fixed; top: 72px; left: 0; right: 0;
-        background: var(--bg-secondary); flex-direction: column;
-        padding: 1.5rem; gap: 1rem; border-bottom: 1px solid var(--border-color);
-        transform: translateY(-150%); transition: var(--transition);
-        box-shadow: var(--shadow-md);
-      }
-      .nav-links.active { transform: translateY(0); }
-      .hamburger { display: flex; }
-      .hero h1 { font-size: 2.25rem; }
-      .hero p { font-size: 1.1rem; }
-      .hero-buttons { flex-direction: column; align-items: center; }
-      .section { padding: 3.5rem 0; }
-      .section-title h2 { font-size: 1.75rem; }
-      .chatbot { width: calc(100vw - 2rem); right: 1rem; bottom: 5rem; }
-      .chatbot-toggle { bottom: 1.5rem; right: 1.5rem; width: 56px; height: 56px; }
-    }
-    @media (max-width: 480px) {
-      .navbar-container { padding: 0.75rem 1rem; }
-      .logo { font-size: 1.25rem; }
-      .logo-icon { width: 32px; height: 32px; font-size: 1rem; }
-      .hero { padding: 4rem 0 3rem; }
-      .hero h1 { font-size: 1.875rem; }
-      .section-title h2 { font-size: 1.5rem; }
-      .doctor-actions .btn { width: 100%; }
-    }
-
-    /* ========== ACCESSIBILITY ========== */
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-      }
-    }
-    .sr-only {
-      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
-    }
-
-    /* ========== LOADING ========== */
-    .loading-overlay {
-      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background: var(--bg-primary); display: flex;
-      align-items: center; justify-content: center; z-index: 9999;
-      transition: opacity 0.3s, visibility 0.3s;
-    }
-    .loading-overlay.hidden { opacity: 0; visibility: hidden; }
-    .spinner {
-      width: 48px; height: 48px; border: 4px solid var(--border-color);
-      border-top-color: var(--accent-primary); border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-    @keyframes spin { to { transform: rotate(360deg); } }
+    :root{--bg-primary:#f8fafc;--bg-secondary:#fff;--bg-glass:rgba(255,255,255,.85);--text-primary:#1e293b;--text-secondary:#475569;--accent-primary:#10b981;--accent-secondary:#059669;--accent-hover:#047857;--border-color:#e2e8f0;--shadow-sm:0 1px 2px rgb(0 0 0/.05);--shadow-md:0 4px 6px -1px rgb(0 0 0/.1),0 2px 4px -2px rgb(0 0 0/.1);--shadow-lg:0 10px 15px -3px rgb(0 0 0/.1),0 4px 6px -4px rgb(0 0 0/.1);--shadow-glass:0 8px 32px rgba(31,38,135,.15);--gradient-primary:linear-gradient(135deg,#10b981 0%,#059669 100%);--gradient-hero:linear-gradient(135deg,#065f46 0%,#047857 50%,#10b981 100%);--transition:all .3s cubic-bezier(.4,0,.2,1);--radius-sm:8px;--radius-md:12px;--radius-lg:20px;--radius-full:9999px}
+    [data-theme="dark"]{--bg-primary:#0f172a;--bg-secondary:#1e293b;--bg-glass:rgba(30,41,59,.85);--text-primary:#f1f5f9;--text-secondary:#cbd5e1;--accent-primary:#10b981;--accent-secondary:#059669;--accent-hover:#34d399;--border-color:#334155;--shadow-sm:0 1px 2px rgb(0 0 0/.3);--shadow-md:0 4px 6px -1px rgb(0 0 0/.4),0 2px 4px -2px rgb(0 0 0/.3);--shadow-lg:0 10px 15px -3px rgb(0 0 0/.5),0 4px 6px -4px rgb(0 0 0/.4);--shadow-glass:0 8px 32px rgba(0,0,0,.4);--gradient-primary:linear-gradient(135deg,#059669 0%,#047857 100%);--gradient-hero:linear-gradient(135deg,#022c22 0%,#065f46 50%,#10b981 100%)}
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg-primary);color:var(--text-primary);line-height:1.6;transition:var(--transition);overflow-x:hidden}
+    h1,h2,h3,h4,h5,h6{font-family:'Poppins','Inter',sans-serif;font-weight:700;line-height:1.2;margin-bottom:.5em}
+    a{text-decoration:none;color:inherit;transition:var(--transition)}
+    button{font-family:inherit;cursor:pointer;border:none;background:none}
+    img{max-width:100%;height:auto;display:block}
+    .container{width:100%;max-width:1280px;margin:0 auto;padding:0 1.5rem}
+    .section{padding:5rem 0}
+    .section-title{text-align:center;margin-bottom:3rem}
+    .section-title h2{font-size:2.25rem;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:inline-block}
+    .section-title p{color:var(--text-secondary);max-width:600px;margin:1rem auto 0;font-size:1.1rem}
+    .navbar{position:sticky;top:0;z-index:1000;background:var(--bg-glass);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border-color);box-shadow:var(--shadow-md);transition:var(--transition)}
+    .navbar-container{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem;max-width:1280px;margin:0 auto}
+    .logo{display:flex;align-items:center;gap:.75rem;font-family:'Poppins',sans-serif;font-weight:800;font-size:1.5rem;color:var(--accent-primary)}
+    .logo-icon{width:40px;height:40px;background:var(--gradient-primary);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.2rem}
+    .nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+    .nav-links a{font-weight:500;position:relative;padding:.5rem 0}
+    .nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--gradient-primary);transition:var(--transition);border-radius:var(--radius-full)}
+    .nav-links a:hover::after{width:100%}
+    .nav-actions{display:flex;align-items:center;gap:1rem}
+    .theme-toggle,.hamburger{width:44px;height:44px;border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;background:var(--bg-secondary);border:1px solid var(--border-color);color:var(--text-primary);transition:var(--transition);font-size:1.2rem}
+    .theme-toggle:hover,.hamburger:hover{background:var(--accent-primary);color:#fff;transform:translateY(-2px);box-shadow:var(--shadow-md)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.875rem 1.5rem;background:var(--gradient-primary);color:#fff;font-weight:600;border-radius:var(--radius-full);transition:var(--transition);box-shadow:var(--shadow-md)}
+    .btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .btn-outline{background:transparent;border:2px solid var(--accent-primary);color:var(--accent-primary)}
+    .btn-outline:hover{background:var(--accent-primary);color:#fff}
+    .btn-sm{padding:.625rem 1.25rem;font-size:.875rem}
+    .hamburger{display:none}
+    .hero{background:var(--gradient-hero);color:#fff;padding:6rem 0 4rem;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(255,255,255,.15) 0%,transparent 70%);border-radius:50%;animation:float 8s ease-in-out infinite}
+    .hero::after{content:'';position:absolute;bottom:-30%;left:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(255,255,255,.1) 0%,transparent 70%);border-radius:50%;animation:float 10s ease-in-out infinite reverse}
+    @keyframes float{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-20px) scale(1.05)}}
+    .hero-content{position:relative;z-index:2;text-align:center;max-width:800px;margin:0 auto;padding:0 1.5rem}
+    .hero h1{font-size:3.5rem;margin-bottom:1.5rem;animation:fadeInUp .8s ease-out}
+    .hero p{font-size:1.25rem;opacity:.95;margin-bottom:2rem;animation:fadeInUp .8s ease-out .2s both}
+    .hero-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;animation:fadeInUp .8s ease-out .4s both}
+    .hero-stats{display:flex;justify-content:center;gap:2rem;margin-top:3rem;flex-wrap:wrap}
+    .stat-item{text-align:center}
+    .stat-number{font-size:2rem;font-weight:800;display:block}
+    .stat-label{opacity:.9;font-size:.9rem}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+    .doctors-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem}
+    .doctor-card{background:var(--bg-secondary);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);transition:var(--transition);border:1px solid var(--border-color);display:flex;flex-direction:column}
+    .doctor-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:var(--accent-primary)}
+    .doctor-header{padding:1.5rem;border-bottom:1px solid var(--border-color);display:flex;align-items:center;gap:1rem}
+    .doctor-avatar{width:72px;height:72px;border-radius:var(--radius-full);background:var(--gradient-primary);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.5rem;flex-shrink:0}
+    .doctor-info h3{font-size:1.25rem;margin-bottom:.25rem}
+    .doctor-location{color:var(--text-secondary);font-size:.9rem;display:flex;align-items:center;gap:.3rem}
+    .doctor-body{padding:1.5rem;flex-grow:1}
+    .doctor-fee{display:flex;justify-content:space-between;align-items:center;padding:.75rem 0;border-bottom:1px solid var(--border-color);margin-bottom:1rem}
+    .fee-label{color:var(--text-secondary)}
+    .fee-amount{font-weight:700;color:var(--accent-primary);font-size:1.25rem}
+    .doctor-actions{display:flex;gap:.75rem;flex-wrap:wrap}
+    .doctor-actions .btn{flex:1;min-width:120px}
+    .skeleton{background:linear-gradient(90deg,var(--bg-secondary) 25%,var(--border-color) 50%,var(--bg-secondary) 75%);background-size:200% 100%;animation:loading 1.5s infinite;border-radius:var(--radius-sm)}
+    @keyframes loading{0%{background-position:200% 0}100%{background-position:-200% 0}}
+    .modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;z-index:2000;opacity:0;visibility:hidden;transition:var(--transition);padding:1rem}
+    .modal.active{opacity:1;visibility:visible}
+    .modal-content{background:var(--bg-secondary);border-radius:var(--radius-lg);width:100%;max-width:500px;max-height:90vh;overflow-y:auto;box-shadow:var(--shadow-lg);transform:translateY(20px);transition:var(--transition);border:1px solid var(--border-color)}
+    .modal.active .modal-content{transform:translateY(0)}
+    .modal-header{padding:1.5rem;border-bottom:1px solid var(--border-color);display:flex;justify-content:space-between;align-items:center}
+    .modal-close{width:36px;height:36px;border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;background:var(--bg-primary);color:var(--text-primary);transition:var(--transition)}
+    .modal-close:hover{background:var(--accent-primary);color:#fff}
+    .modal-body{padding:1.5rem}
+    .form-group{margin-bottom:1.25rem}
+    .form-group label{display:block;margin-bottom:.5rem;font-weight:500;color:var(--text-secondary)}
+    .form-control{width:100%;padding:.875rem 1rem;border:1px solid var(--border-color);border-radius:var(--radius-md);background:var(--bg-primary);color:var(--text-primary);font-size:1rem;transition:var(--transition)}
+    .form-control:focus{outline:none;border-color:var(--accent-primary);box-shadow:0 0 0 3px rgba(16,185,129,.2)}
+    .booking-success{text-align:center;padding:2rem 1rem}
+    .success-icon{width:80px;height:80px;background:var(--gradient-primary);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;color:#fff;font-size:2rem;animation:pulse 2s infinite}
+    @keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}
+    .booking-details{background:var(--bg-primary);border-radius:var(--radius-md);padding:1rem;margin:1.5rem 0;text-align:left}
+    .booking-details p{display:flex;justify-content:space-between;padding:.5rem 0;border-bottom:1px dashed var(--border-color)}
+    .booking-details p:last-child{border-bottom:none}
+    .payment-methods{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:1.5rem 0}
+    .payment-card{background:var(--bg-primary);border:2px solid var(--border-color);border-radius:var(--radius-md);padding:1.25rem;text-align:center;transition:var(--transition);cursor:pointer}
+    .payment-card:hover,.payment-card.selected{border-color:var(--accent-primary);background:rgba(16,185,129,.05)}
+    .payment-card h4{margin:.5rem 0;color:var(--accent-primary)}
+    .payment-number{font-family:monospace;font-size:1.1rem;font-weight:600;margin:.5rem 0;letter-spacing:1px}
+    .copy-btn{background:var(--bg-secondary);border:1px solid var(--border-color);padding:.375rem .75rem;border-radius:var(--radius-sm);font-size:.8rem;margin-top:.5rem;transition:var(--transition)}
+    .copy-btn:hover{background:var(--accent-primary);color:#fff}
+    .upload-area{border:2px dashed var(--border-color);border-radius:var(--radius-md);padding:2rem;text-align:center;margin:1rem 0;cursor:pointer;transition:var(--transition)}
+    .upload-area:hover{border-color:var(--accent-primary);background:rgba(16,185,129,.05)}
+    .upload-area.dragover{border-color:var(--accent-primary);background:rgba(16,185,129,.1)}
+    .chatbot-toggle{position:fixed;bottom:2rem;right:2rem;width:60px;height:60px;border-radius:var(--radius-full);background:var(--gradient-primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:var(--shadow-lg);z-index:1500;transition:var(--transition);animation:bounce 2s infinite}
+    .chatbot-toggle:hover{transform:scale(1.1)}
+    @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    .chatbot{position:fixed;bottom:5.5rem;right:2rem;width:380px;max-width:calc(100vw - 4rem);height:500px;max-height:calc(100vh - 8rem);background:var(--bg-secondary);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);display:flex;flex-direction:column;z-index:1500;opacity:0;visibility:hidden;transform:translateY(20px);transition:var(--transition);border:1px solid var(--border-color)}
+    .chatbot.active{opacity:1;visibility:visible;transform:translateY(0)}
+    .chatbot-header{padding:1rem 1.25rem;border-bottom:1px solid var(--border-color);display:flex;justify-content:space-between;align-items:center;background:var(--gradient-primary);color:#fff;border-radius:var(--radius-lg) var(--radius-lg) 0 0}
+    .chatbot-title{font-weight:600;display:flex;align-items:center;gap:.5rem}
+    .chatbot-messages{flex:1;padding:1rem;overflow-y:auto;display:flex;flex-direction:column;gap:1rem}
+    .message{max-width:85%;padding:.875rem 1rem;border-radius:var(--radius-md);line-height:1.5}
+    .message.bot{align-self:flex-start;background:var(--bg-primary);border-bottom-left-radius:4px}
+    .message.user{align-self:flex-end;background:var(--gradient-primary);color:#fff;border-bottom-right-radius:4px}
+    .chatbot-input{padding:1rem;border-top:1px solid var(--border-color);display:flex;gap:.75rem}
+    .chatbot-input input{flex:1;padding:.75rem 1rem;border:1px solid var(--border-color);border-radius:var(--radius-full);background:var(--bg-primary);color:var(--text-primary)}
+    .chatbot-input button{width:44px;height:44px;border-radius:var(--radius-full);background:var(--gradient-primary);color:#fff;display:flex;align-items:center;justify-content:center;transition:var(--transition)}
+    .chatbot-input button:hover{transform:scale(1.05)}
+    .voice-btn{background:var(--bg-primary)!important;color:var(--accent-primary);border:1px solid var(--border-color)}
+    .footer{background:var(--bg-secondary);border-top:1px solid var(--border-color);padding:3rem 0 1.5rem;margin-top:4rem}
+    .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem}
+    .footer-brand .logo{margin-bottom:1rem}
+    .footer-brand p{color:var(--text-secondary);margin-bottom:1rem;font-size:.95rem}
+    .contact-item{display:flex;align-items:center;gap:.75rem;margin-bottom:.75rem;color:var(--text-secondary)}
+    .social-links{display:flex;gap:.75rem;margin-top:1rem}
+    .social-links a{width:40px;height:40px;border-radius:var(--radius-full);background:var(--bg-primary);display:flex;align-items:center;justify-content:center;color:var(--text-primary);transition:var(--transition);border:1px solid var(--border-color)}
+    .social-links a:hover{background:var(--accent-primary);color:#fff;transform:translateY(-3px)}
+    .footer-links h4{margin-bottom:1rem;font-size:1.1rem}
+    .footer-links ul{list-style:none}
+    .footer-links li{margin-bottom:.5rem}
+    .footer-links a{color:var(--text-secondary);transition:var(--transition)}
+    .footer-links a:hover{color:var(--accent-primary);padding-left:4px}
+    .footer-bottom{text-align:center;padding-top:2rem;margin-top:2rem;border-top:1px solid var(--border-color);color:var(--text-secondary);font-size:.9rem}
+    .smartverse-section{background:var(--bg-primary);padding:1.5rem;border-radius:var(--radius-md);margin-top:2rem;text-align:center;border:1px solid var(--border-color)}
+    .smartverse-links{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:1rem}
+    .smartverse-links a{color:var(--accent-primary);font-weight:500;transition:var(--transition)}
+    .smartverse-links a:hover{text-decoration:underline}
+    .toast-container{position:fixed;top:1rem;right:1rem;z-index:3000;display:flex;flex-direction:column;gap:.75rem;max-width:350px}
+    .toast{background:var(--bg-secondary);border-left:4px solid var(--accent-primary);border-radius:var(--radius-md);padding:1rem 1.25rem;box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:.75rem;animation:slideIn .3s ease-out;border:1px solid var(--border-color)}
+    .toast.error{border-left-color:#ef4444}
+    .toast.success{border-left-color:#10b981}
+    @keyframes slideIn{from{transform:translateX(100%);opacity:0}to{transform:translateX(0);opacity:1}}
+    @media(max-width:1024px){.hero h1{font-size:2.75rem}}
+    @media(max-width:768px){.nav-links{position:fixed;top:72px;left:0;right:0;background:var(--bg-secondary);flex-direction:column;padding:1.5rem;gap:1rem;border-bottom:1px solid var(--border-color);transform:translateY(-150%);transition:var(--transition);box-shadow:var(--shadow-md)}.nav-links.active{transform:translateY(0)}.hamburger{display:flex}.hero h1{font-size:2.25rem}.hero p{font-size:1.1rem}.hero-buttons{flex-direction:column;align-items:center}.section{padding:3.5rem 0}.section-title h2{font-size:1.75rem}.chatbot{width:calc(100vw - 2rem);right:1rem;bottom:5rem}.chatbot-toggle{bottom:1.5rem;right:1.5rem;width:56px;height:56px}}
+    @media(max-width:480px){.navbar-container{padding:.75rem 1rem}.logo{font-size:1.25rem}.logo-icon{width:32px;height:32px;font-size:1rem}.hero{padding:4rem 0 3rem}.hero h1{font-size:1.875rem}.section-title h2{font-size:1.5rem}.doctor-actions .btn{width:100%}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .loading-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:var(--bg-primary);display:flex;align-items:center;justify-content:center;z-index:9999;transition:opacity .3s,visibility .3s}
+    .loading-overlay.hidden{opacity:0;visibility:hidden}
+    .spinner{width:48px;height:48px;border:4px solid var(--border-color);border-top-color:var(--accent-primary);border-radius:50%;animation:spin 1s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
   </style>
 </head>
 <body>
-  <!-- Loading Overlay -->
   <div class="loading-overlay" id="loadingOverlay"><div class="spinner"></div></div>
-
-  <!-- Toast Container -->
   <div class="toast-container" id="toastContainer"></div>
-
-  <!-- Navbar -->
+  
   <nav class="navbar">
     <div class="navbar-container">
-      <a href="#" class="logo">
-        <div class="logo-icon">GC</div>
-        GreenCare
-      </a>
+      <a href="#" class="logo"><div class="logo-icon">GC</div>GreenCare</a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#doctors">Doctors</a></li>
@@ -608,7 +200,6 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="hero-content">
       <h1>World-Class Healthcare, Digitally Delivered</h1>
@@ -625,146 +216,77 @@
     </div>
   </section>
 
-  <!-- Doctors Section -->
   <section class="section" id="doctors">
     <div class="container">
-      <div class="section-title">
-        <h2>Our Expert Doctors</h2>
-        <p>Verified specialists across Pakistan ready to provide you with world-class care</p>
-      </div>
+      <div class="section-title"><h2>Our Expert Doctors</h2><p>Verified specialists across Pakistan ready to provide you with world-class care</p></div>
       <div class="doctors-grid" id="doctorsGrid">
-        <!-- Doctors loaded dynamically -->
-        <div class="skeleton" style="height: 320px;"></div>
-        <div class="skeleton" style="height: 320px;"></div>
-        <div class="skeleton" style="height: 320px;"></div>
+        <div class="skeleton" style="height:320px"></div>
+        <div class="skeleton" style="height:320px"></div>
+        <div class="skeleton" style="height:320px"></div>
       </div>
     </div>
   </section>
 
-  <!-- Booking Section -->
-  <section class="section" id="booking" style="background: var(--bg-primary);">
+  <section class="section" id="booking" style="background:var(--bg-primary)">
     <div class="container">
-      <div class="section-title">
-        <h2>Book Your Appointment</h2>
-        <p>Quick, secure, and convenient online booking with instant confirmation</p>
-      </div>
-      <div style="max-width: 600px; margin: 0 auto; background: var(--bg-secondary); border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-md); border: 1px solid var(--border-color);">
+      <div class="section-title"><h2>Book Your Appointment</h2><p>Quick, secure, and convenient online booking with instant confirmation</p></div>
+      <div style="max-width:600px;margin:0 auto;background:var(--bg-secondary);border-radius:var(--radius-lg);padding:2rem;box-shadow:var(--shadow-md);border:1px solid var(--border-color)">
         <form id="bookingForm">
-          <div class="form-group">
-            <label for="doctorSelect">Select Doctor *</label>
-            <select class="form-control" id="doctorSelect" required>
-              <option value="">Choose a doctor...</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="appointmentDate">Date *</label>
-            <input type="date" class="form-control" id="appointmentDate" required min="">
-          </div>
-          <div class="form-group">
-            <label for="appointmentTime">Time *</label>
-            <select class="form-control" id="appointmentTime" required>
-              <option value="">Select time...</option>
-              <option value="09:00">09:00 AM</option>
-              <option value="10:00">10:00 AM</option>
-              <option value="11:00">11:00 AM</option>
-              <option value="14:00">02:00 PM</option>
-              <option value="15:00">03:00 PM</option>
-              <option value="16:00">04:00 PM</option>
-              <option value="17:00">05:00 PM</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="patientName">Your Name *</label>
-            <input type="text" class="form-control" id="patientName" placeholder="Enter your full name" required>
-          </div>
-          <div class="form-group">
-            <label for="patientPhone">Phone Number *</label>
-            <input type="tel" class="form-control" id="patientPhone" placeholder="+92 3XX XXXXXXX" required pattern="^\+92\d{10}$">
-          </div>
-          <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Book Appointment - Rs 200</button>
+          <div class="form-group"><label for="doctorSelect">Select Doctor *</label><select class="form-control" id="doctorSelect" required><option value="">Choose a doctor...</option></select></div>
+          <div class="form-group"><label for="appointmentDate">Date *</label><input type="date" class="form-control" id="appointmentDate" required min=""></div>
+          <div class="form-group"><label for="appointmentTime">Time *</label><select class="form-control" id="appointmentTime" required><option value="">Select time...</option><option value="09:00">09:00 AM</option><option value="10:00">10:00 AM</option><option value="11:00">11:00 AM</option><option value="14:00">02:00 PM</option><option value="15:00">03:00 PM</option><option value="16:00">04:00 PM</option><option value="17:00">05:00 PM</option></select></div>
+          <div class="form-group"><label for="patientName">Your Name *</label><input type="text" class="form-control" id="patientName" placeholder="Enter your full name" required></div>
+          <div class="form-group"><label for="patientPhone">Phone Number *</label><input type="tel" class="form-control" id="patientPhone" placeholder="+92 3XX XXXXXXX" required pattern="^\+92\d{10}$"></div>
+          <button type="submit" class="btn" style="width:100%;margin-top:1rem">Book Appointment - Rs 200</button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
   <section class="section" id="about">
     <div class="container">
-      <div class="section-title">
-        <h2>About GreenCare</h2>
-        <p>Revolutionizing healthcare access across Pakistan</p>
-      </div>
-      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-        <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
-          GreenCare Digital Hospital Pakistan is a digital healthcare platform founded by <strong>Muhammad Ali</strong> in Karachi.
-        </p>
-        <p style="margin-bottom: 2rem;">
-          Our mission is to connect patients with trusted doctors across Pakistan and allow easy online appointment booking. We believe everyone deserves access to quality healthcare, regardless of location.
-        </p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-          <div style="padding: 1.5rem; background: var(--bg-secondary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
-            <h4 style="margin-bottom: 0.5rem;">Our Mission</h4>
-            <p style="color: var(--text-secondary); font-size: 0.95rem;">Serve Humanity through accessible digital healthcare</p>
-          </div>
-          <div style="padding: 1.5rem; background: var(--bg-secondary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌍</div>
-            <h4 style="margin-bottom: 0.5rem;">Nationwide</h4>
-            <p style="color: var(--text-secondary); font-size: 0.95rem;">Connecting patients with doctors across all major cities</p>
-          </div>
-          <div style="padding: 1.5rem; background: var(--bg-secondary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔒</div>
-            <h4 style="margin-bottom: 0.5rem;">Secure & Private</h4>
-            <p style="color: var(--text-secondary); font-size: 0.95rem;">Your health data is protected with enterprise-grade security</p>
-          </div>
+      <div class="section-title"><h2>About GreenCare</h2><p>Revolutionizing healthcare access across Pakistan</p></div>
+      <div style="max-width:800px;margin:0 auto;text-align:center">
+        <p style="font-size:1.1rem;margin-bottom:1.5rem">GreenCare Digital Hospital Pakistan is a digital healthcare platform founded by <strong>Muhammad Ali</strong> in Karachi.</p>
+        <p style="margin-bottom:2rem">Our mission is to connect patients with trusted doctors across Pakistan and allow easy online appointment booking. We believe everyone deserves access to quality healthcare, regardless of location.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin:2rem 0">
+          <div style="padding:1.5rem;background:var(--bg-secondary);border-radius:var(--radius-md);border:1px solid var(--border-color)"><div style="font-size:2rem;margin-bottom:.5rem">🎯</div><h4 style="margin-bottom:.5rem">Our Mission</h4><p style="color:var(--text-secondary);font-size:.95rem">Serve Humanity through accessible digital healthcare</p></div>
+          <div style="padding:1.5rem;background:var(--bg-secondary);border-radius:var(--radius-md);border:1px solid var(--border-color)"><div style="font-size:2rem;margin-bottom:.5rem">🌍</div><h4 style="margin-bottom:.5rem">Nationwide</h4><p style="color:var(--text-secondary);font-size:.95rem">Connecting patients with doctors across all major cities</p></div>
+          <div style="padding:1.5rem;background:var(--bg-secondary);border-radius:var(--radius-md);border:1px solid var(--border-color)"><div style="font-size:2rem;margin-bottom:.5rem">🔒</div><h4 style="margin-bottom:.5rem">Secure & Private</h4><p style="color:var(--text-secondary);font-size:.95rem">Your health data is protected with enterprise-grade security</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="section" id="contact" style="background: var(--bg-primary);">
+  <section class="section" id="contact" style="background:var(--bg-primary)">
     <div class="container">
-      <div class="section-title">
-        <h2>Contact Us</h2>
-        <p>Reach out anytime - we're here to help</p>
-      </div>
-      <div style="max-width: 600px; margin: 0 auto; text-align: center;">
-        <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;">
-          <a href="https://wa.me/923441695860" target="_blank" class="btn" style="background: #25D366; color: white;">
-            💬 WhatsApp: +92 344 1695860
-          </a>
-          <a href="https://wa.me/923272358384" target="_blank" class="btn" style="background: #25D366; color: white;">
-            💬 WhatsApp: +92 327 2358384
-          </a>
-          <a href="mailto:Muhammadalikn53@gmail.com" class="btn btn-outline">
-            ✉️ Muhammadalikn53@gmail.com
-          </a>
+      <div class="section-title"><h2>Contact Us</h2><p>Reach out anytime - we're here to help</p></div>
+      <div style="max-width:600px;margin:0 auto;text-align:center">
+        <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem">
+          <a href="https://wa.me/923441695860" target="_blank" class="btn" style="background:#25D366;color:#fff">💬 WhatsApp: +92 344 1695860</a>
+          <a href="https://wa.me/923272358384" target="_blank" class="btn" style="background:#25D366;color:#fff">💬 WhatsApp: +92 327 2358384</a>
+          <a href="mailto:Muhammadalikn53@gmail.com" class="btn btn-outline">✉️ Muhammadalikn53@gmail.com</a>
         </div>
-        <div style="background: var(--bg-secondary); border-radius: var(--radius-lg); padding: 1.5rem; border: 1px solid var(--border-color);">
-          <h4 style="margin-bottom: 1rem;">📍 Location</h4>
-          <p style="color: var(--text-secondary);">Karachi, Pakistan</p>
-          <p style="color: var(--text-secondary); margin-top: 0.5rem;">Founder: Muhammad Ali</p>
+        <div style="background:var(--bg-secondary);border-radius:var(--radius-lg);padding:1.5rem;border:1px solid var(--border-color)">
+          <h4 style="margin-bottom:1rem">📍 Location</h4>
+          <p style="color:var(--text-secondary)">Karachi, Pakistan</p>
+          <p style="color:var(--text-secondary);margin-top:.5rem">Founder: Muhammad Ali</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SmartVerse Section -->
-  <section class="section" style="padding: 2rem 0; background: var(--bg-secondary); border-top: 1px solid var(--border-color);">
-    <div class="container" style="text-align: center;">
-      <p style="font-weight: 600; margin-bottom: 1rem;">✨ Powered by SmartVerse Studio</p>
+  <section class="section" style="padding:2rem 0;background:var(--bg-secondary);border-top:1px solid var(--border-color)">
+    <div class="container" style="text-align:center">
+      <p style="font-weight:600;margin-bottom:1rem">✨ Powered by SmartVerse Studio</p>
       <div class="smartverse-links">
-        <a href="#" target="_blank">Digital Reads Studio</a>
-        <span>•</span>
-        <a href="#" target="_blank">Travel Scope 360</a>
-        <span>•</span>
+        <a href="#" target="_blank">Digital Reads Studio</a><span>•</span>
+        <a href="#" target="_blank">Travel Scope 360</a><span>•</span>
         <a href="#" target="_blank">Smart Expenses</a>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -772,21 +294,12 @@
           <div class="logo"><div class="logo-icon">GC</div>GreenCare</div>
           <p>Digital healthcare platform connecting patients with trusted doctors across Pakistan.</p>
           <div class="social-links">
-            <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="Instagram">📷</a>
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="Telegram">✈️</a>
+            <a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">📷</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Telegram">✈️</a>
           </div>
         </div>
         <div class="footer-links">
           <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#doctors">Find Doctors</a></li>
-            <li><a href="#booking">Book Appointment</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+          <ul><li><a href="#home">Home</a></li><li><a href="#doctors">Find Doctors</a></li><li><a href="#booking">Book Appointment</a></li><li><a href="#about">About Us</a></li><li><a href="#contact">Contact</a></li></ul>
         </div>
         <div class="footer-links">
           <h4>Contact Info</h4>
@@ -798,552 +311,245 @@
       </div>
       <div class="footer-bottom">
         <p>&copy; <span id="year"></span> GreenCare Digital Hospital Pakistan. All rights reserved.</p>
-        <p style="margin-top: 0.5rem; font-size: 0.85rem;">Founded by Muhammad Ali | Serving Humanity</p>
+        <p style="margin-top:.5rem;font-size:.85rem">Founded by Muhammad Ali | Serving Humanity</p>
       </div>
     </div>
   </footer>
 
-  <!-- Booking Success Modal -->
   <div class="modal" id="bookingModal">
     <div class="modal-content">
-      <div class="modal-header">
-        <h3>✅ Appointment Booked!</h3>
-        <button class="modal-close" id="modalClose">&times;</button>
-      </div>
+      <div class="modal-header"><h3>✅ Appointment Booked!</h3><button class="modal-close" id="modalClose">&times;</button></div>
       <div class="modal-body">
         <div class="booking-success">
           <div class="success-icon">✓</div>
           <h4>Your appointment is confirmed!</h4>
-          <p style="color: var(--text-secondary); margin: 0.5rem 0 1.5rem;">Please complete payment to finalize your booking</p>
+          <p style="color:var(--text-secondary);margin:.5rem 0 1.5rem">Please complete payment to finalize your booking</p>
           <div class="booking-details" id="bookingDetails"></div>
-          <p style="font-weight: 600; margin: 1rem 0 0.5rem;">👉 Pay Rs 200 to confirm appointment</p>
+          <p style="font-weight:600;margin:1rem 0 .5rem">👉 Pay Rs 200 to confirm appointment</p>
           <div class="payment-methods">
-            <div class="payment-card" data-method="jazzcash">
-              <div>📱 JazzCash</div>
-              <div class="payment-number">03272358384</div>
-              <button class="copy-btn" data-copy="03272358384">Copy Number</button>
-            </div>
-            <div class="payment-card" data-method="easypaisa">
-              <div>💰 EasyPaisa</div>
-              <div class="payment-number">034416958360</div>
-              <button class="copy-btn" data-copy="034416958360">Copy Number</button>
-            </div>
+            <div class="payment-card" data-method="jazzcash"><div>📱 JazzCash</div><div class="payment-number">03272358384</div><button class="copy-btn" data-copy="03272358384">Copy Number</button></div>
+            <div class="payment-card" data-method="easypaisa"><div>💰 EasyPaisa</div><div class="payment-number">034416958360</div><button class="copy-btn" data-copy="034416958360">Copy Number</button></div>
           </div>
-          <div style="margin: 1.5rem 0;">
-            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Upload Payment Screenshot</label>
-            <div class="upload-area" id="uploadArea">
-              📎 Click or drag to upload screenshot
-              <input type="file" id="paymentFile" accept="image/*" style="display: none;">
-            </div>
-          </div>
-          <button class="btn" id="paidBtn" style="width: 100%; margin-bottom: 1rem;">✓ I Paid - Confirm Booking</button>
-          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-            <a href="#" class="btn btn-outline" id="whatsappConfirm" target="_blank" style="flex: 1; min-width: 140px; background: #25D366; color: white; border: none;">💬 WhatsApp Confirm</a>
-            <a href="#" class="btn btn-outline" id="callDoctor" style="flex: 1; min-width: 140px;">📞 Call Doctor</a>
+          <div style="margin:1.5rem 0"><label style="display:block;margin-bottom:.5rem;font-weight:500">Upload Payment Screenshot</label><div class="upload-area" id="uploadArea">📎 Click or drag to upload screenshot<input type="file" id="paymentFile" accept="image/*" style="display:none"></div></div>
+          <button class="btn" id="paidBtn" style="width:100%;margin-bottom:1rem">✓ I Paid - Confirm Booking</button>
+          <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+            <a href="#" class="btn btn-outline" id="whatsappConfirm" target="_blank" style="flex:1;min-width:140px;background:#25D366;color:#fff;border:none">💬 WhatsApp Confirm</a>
+            <a href="#" class="btn btn-outline" id="callDoctor" style="flex:1;min-width:140px">📞 Call Doctor</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- AI Chatbot -->
   <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open AI Assistant">🤖</button>
   <div class="chatbot" id="chatbot">
-    <div class="chatbot-header">
-      <div class="chatbot-title">🤖 GreenCare AI Assistant</div>
-      <button class="modal-close" id="chatbotClose" style="background: rgba(255,255,255,0.2); color: white; width: 32px; height: 32px;">&times;</button>
-    </div>
-    <div class="chatbot-messages" id="chatMessages">
-      <div class="message bot">
-        Hello! I'm your GreenCare AI health assistant. 🩺<br><br>
-        I can help you with:<br>
-        • Symptom checking<br>
-        • Doctor recommendations<br>
-        • Booking guidance<br><br>
-        How can I help you today?
-      </div>
-    </div>
-    <div class="chatbot-input">
-      <button class="voice-btn" id="voiceBtn" aria-label="Voice input">🎤</button>
-      <input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off">
-      <button id="chatSend">➤</button>
-    </div>
+    <div class="chatbot-header"><div class="chatbot-title">🤖 GreenCare AI Assistant</div><button class="modal-close" id="chatbotClose" style="background:rgba(255,255,255,.2);color:#fff;width:32px;height:32px">&times;</button></div>
+    <div class="chatbot-messages" id="chatMessages"><div class="message bot">Hello! I'm your GreenCare AI health assistant. 🩺<br><br>I can help you with:<br>• Symptom checking<br>• Doctor recommendations<br>• Booking guidance<br><br>How can I help you today?</div></div>
+    <div class="chatbot-input"><button class="voice-btn" id="voiceBtn" aria-label="Voice input">🎤</button><input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off"><button id="chatSend">➤</button></div>
   </div>
 
-  <!-- Admin Panel Modal -->
   <div class="modal" id="adminModal">
-    <div class="modal-content" style="max-width: 700px; max-height: 85vh;">
-      <div class="modal-header">
-        <h3>🔐 Admin Panel</h3>
-        <button class="modal-close" id="adminModalClose">&times;</button>
-      </div>
+    <div class="modal-content" style="max-width:700px;max-height:85vh">
+      <div class="modal-header"><h3>🔐 Admin Panel</h3><button class="modal-close" id="adminModalClose">&times;</button></div>
       <div class="modal-body">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
-          <div style="background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-md); text-align: center; border: 1px solid var(--border-color);">
-            <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-primary);">10</div>
-            <div style="color: var(--text-secondary); font-size: 0.9rem;">Doctors</div>
-          </div>
-          <div style="background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-md); text-align: center; border: 1px solid var(--border-color);">
-            <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-primary);">0</div>
-            <div style="color: var(--text-secondary); font-size: 0.9rem;">Appointments</div>
-          </div>
-          <div style="background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-md); text-align: center; border: 1px solid var(--border-color);">
-            <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-primary);">0</div>
-            <div style="color: var(--text-secondary); font-size: 0.9rem;">Payments</div>
-          </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin-bottom:1.5rem">
+          <div style="background:var(--bg-primary);padding:1rem;border-radius:var(--radius-md);text-align:center;border:1px solid var(--border-color)"><div style="font-size:1.5rem;font-weight:700;color:var(--accent-primary)">10</div><div style="color:var(--text-secondary);font-size:.9rem">Doctors</div></div>
+          <div style="background:var(--bg-primary);padding:1rem;border-radius:var(--radius-md);text-align:center;border:1px solid var(--border-color)"><div style="font-size:1.5rem;font-weight:700;color:var(--accent-primary)">0</div><div style="color:var(--text-secondary);font-size:.9rem">Appointments</div></div>
+          <div style="background:var(--bg-primary);padding:1rem;border-radius:var(--radius-md);text-align:center;border:1px solid var(--border-color)"><div style="font-size:1.5rem;font-weight:700;color:var(--accent-primary)">0</div><div style="color:var(--text-secondary);font-size:.9rem">Payments</div></div>
         </div>
-        <div style="margin-bottom: 1.5rem;">
-          <h4 style="margin-bottom: 0.75rem;">👨‍⚕️ Manage Doctors</h4>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">View and manage doctor profiles</p>
-          <button class="btn btn-outline btn-sm">View Doctors</button>
-        </div>
-        <div style="margin-bottom: 1.5rem;">
-          <h4 style="margin-bottom: 0.75rem;">📅 Appointments</h4>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Review and approve bookings</p>
-          <button class="btn btn-outline btn-sm">View Appointments</button>
-        </div>
-        <div>
-          <h4 style="margin-bottom: 0.75rem;">💰 Verify Payments</h4>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Confirm payment screenshots</p>
-          <button class="btn btn-outline btn-sm">View Payments</button>
-        </div>
-        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
-          <p style="color: var(--text-secondary); font-size: 0.85rem;">
-            <strong>Note:</strong> Full admin authentication and database operations require Firebase setup. 
-            This demo shows UI structure only.
-          </p>
-        </div>
+        <div style="margin-bottom:1.5rem"><h4 style="margin-bottom:.75rem">👨‍⚕️ Manage Doctors</h4><p style="color:var(--text-secondary);font-size:.9rem;margin-bottom:1rem">View and manage doctor profiles</p><button class="btn btn-outline btn-sm">View Doctors</button></div>
+        <div style="margin-bottom:1.5rem"><h4 style="margin-bottom:.75rem">📅 Appointments</h4><p style="color:var(--text-secondary);font-size:.9rem;margin-bottom:1rem">Review and approve bookings</p><button class="btn btn-outline btn-sm">View Appointments</button></div>
+        <div><h4 style="margin-bottom:.75rem">💰 Verify Payments</h4><p style="color:var(--text-secondary);font-size:.9rem;margin-bottom:1rem">Confirm payment screenshots</p><button class="btn btn-outline btn-sm">View Payments</button></div>
+        <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border-color)"><p style="color:var(--text-secondary);font-size:.85rem"><strong>Note:</strong> Full admin authentication and database operations require Firebase setup. This demo shows UI structure only.</p></div>
       </div>
     </div>
   </div>
 
-  <script>
-    // ========================================
-    // 🔥 FIREBASE CONFIG (EXACT AS PROVIDED)
-    // ========================================
+  <!-- ✅ FIREBASE INITIALIZATION - PRODUCTION READY (PLACED AT END OF BODY) -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+    import { getAuth } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+    import { getStorage } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-storage.js";
+
     const firebaseConfig = {
       apiKey: "AIzaSyBG7sidh9LtulBPfYwGAIwUUkQuDpo4UGE",
       authDomain: "greencare-hospital.firebaseapp.com",
       projectId: "greencare-hospital",
       storageBucket: "greencare-hospital.firebasestorage.app",
       messagingSenderId: "10190752717",
-      appId: "1:10190752717:web:556886d170ea0df9bed284"
+      appId: "1:10190752717:web:556886d170ea0df9bed284",
+      measurementId: "G-KGTFZRD1Q3"
     };
 
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore();
-    const storage = firebase.storage();
-    const auth = firebase.auth();
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = getFirestore(app);
+    const auth = getAuth(app);
+    const storage = getStorage(app);
 
-    // ========================================
-    // 👨‍⚕️ DOCTORS DATA (EXACT 10 - NO CHANGES)
-    // ========================================
+    window.firebaseApp = app;
+    window.firebaseAnalytics = analytics;
+    window.db = db;
+    window.auth = auth;
+    window.storage = storage;
+
+    console.log("✅ Firebase Initialized: greencare-hospital");
+  </script>
+
+  <!-- ✅ MAIN APPLICATION JAVASCRIPT -->
+  <script>
     const doctorsData = [
-      { id: 1, name: "Prof Dr Bashir Hanif", location: "Karachi - Tabba Heart Institute", fee: 3000, phone: "021111844844", whatsapp: "923111222398" },
-      { id: 2, name: "Dr Sohail Abrar", location: "Karachi - NICVD", fee: 2500, phone: "02199201234", whatsapp: "923111222398" },
-      { id: 3, name: "Prof Dr Muhammad Azhar", location: "Lahore - PIC", fee: 3000, phone: "04299203100", whatsapp: "923111222398" },
-      { id: 4, name: "Dr Ayesha Malik", location: "Lahore - Doctors Hospital", fee: 2500, phone: "042111000111", whatsapp: "923111222398" },
-      { id: 5, name: "Prof Dr Hamed Khan", location: "Peshawar - Hayatabad Medical Complex", fee: 2500, phone: "0919211440", whatsapp: "923111222398" },
-      { id: 6, name: "Prof Dr Asim Pathan", location: "Islamabad - Shifa International", fee: 5000, phone: "0518463000", whatsapp: "923111222398" },
-      { id: 7, name: "Prof Dr Khursheed Hassan", location: "Karachi", fee: 1500, phone: "03094442927", whatsapp: "923094442927" },
-      { id: 8, name: "Prof Dr Muhammad Yaqoob Ahmedani", location: "Karachi", fee: 2000, phone: "021111844844", whatsapp: "923111222398" },
-      { id: 9, name: "Prof Dr Nisar Ahmed Rao", location: "Karachi", fee: 2500, phone: "021111844844", whatsapp: "923111222398" },
-      { id: 10, name: "Dr Hamed Ali", location: "Karachi - Hamed Dental Clinic", fee: 2000, phone: "03155846158", whatsapp: "923401165870" }
+      {id:1,name:"Prof Dr Bashir Hanif",location:"Karachi - Tabba Heart Institute",fee:3000,phone:"021111844844",whatsapp:"923111222398"},
+      {id:2,name:"Dr Sohail Abrar",location:"Karachi - NICVD",fee:2500,phone:"02199201234",whatsapp:"923111222398"},
+      {id:3,name:"Prof Dr Muhammad Azhar",location:"Lahore - PIC",fee:3000,phone:"04299203100",whatsapp:"923111222398"},
+      {id:4,name:"Dr Ayesha Malik",location:"Lahore - Doctors Hospital",fee:2500,phone:"042111000111",whatsapp:"923111222398"},
+      {id:5,name:"Prof Dr Hamed Khan",location:"Peshawar - Hayatabad Medical Complex",fee:2500,phone:"0919211440",whatsapp:"923111222398"},
+      {id:6,name:"Prof Dr Asim Pathan",location:"Islamabad - Shifa International",fee:5000,phone:"0518463000",whatsapp:"923111222398"},
+      {id:7,name:"Prof Dr Khursheed Hassan",location:"Karachi",fee:1500,phone:"03094442927",whatsapp:"923094442927"},
+      {id:8,name:"Prof Dr Muhammad Yaqoob Ahmedani",location:"Karachi",fee:2000,phone:"021111844844",whatsapp:"923111222398"},
+      {id:9,name:"Prof Dr Nisar Ahmed Rao",location:"Karachi",fee:2500,phone:"021111844844",whatsapp:"923111222398"},
+      {id:10,name:"Dr Hamed Ali",location:"Karachi - Hamed Dental Clinic",fee:2000,phone:"03155846158",whatsapp:"923401165870"}
     ];
 
-    // ========================================
-    // GLOBAL VARIABLES
-    // ========================================
-    let currentBooking = null;
-    let selectedPaymentMethod = null;
-    let uploadedFile = null;
-
-    // ========================================
-    // DOM ELEMENTS
-    // ========================================
+    let currentBooking = null, selectedPaymentMethod = null, uploadedFile = null;
     const $ = id => document.getElementById(id);
-    const elements = {
-      loadingOverlay: $('loadingOverlay'),
-      toastContainer: $('toastContainer'),
-      themeToggle: $('themeToggle'),
-      hamburger: $('hamburger'),
-      navLinks: $('navLinks'),
-      doctorsGrid: $('doctorsGrid'),
-      doctorSelect: $('doctorSelect'),
-      bookingForm: $('bookingForm'),
-      appointmentDate: $('appointmentDate'),
-      bookingModal: $('bookingModal'),
-      modalClose: $('modalClose'),
-      bookingDetails: $('bookingDetails'),
-      whatsappConfirm: $('whatsappConfirm'),
-      callDoctor: $('callDoctor'),
-      paymentCards: document.querySelectorAll('.payment-card'),
-      copyButtons: document.querySelectorAll('.copy-btn'),
-      uploadArea: $('uploadArea'),
-      paymentFile: $('paymentFile'),
-      paidBtn: $('paidBtn'),
-      chatbotToggle: $('chatbotToggle'),
-      chatbot: $('chatbot'),
-      chatbotClose: $('chatbotClose'),
-      chatMessages: $('chatMessages'),
-      chatInput: $('chatInput'),
-      chatSend: $('chatSend'),
-      voiceBtn: $('voiceBtn'),
-      adminBtn: $('adminBtn'),
-      adminModal: $('adminModal'),
-      adminModalClose: $('adminModalClose'),
-      year: $('year')
+    const els = {
+      loadingOverlay: $('loadingOverlay'), toastContainer: $('toastContainer'), themeToggle: $('themeToggle'),
+      hamburger: $('hamburger'), navLinks: $('navLinks'), doctorsGrid: $('doctorsGrid'), doctorSelect: $('doctorSelect'),
+      bookingForm: $('bookingForm'), appointmentDate: $('appointmentDate'), bookingModal: $('bookingModal'),
+      modalClose: $('modalClose'), bookingDetails: $('bookingDetails'), whatsappConfirm: $('whatsappConfirm'),
+      callDoctor: $('callDoctor'), paymentCards: document.querySelectorAll('.payment-card'),
+      copyButtons: document.querySelectorAll('.copy-btn'), uploadArea: $('uploadArea'), paymentFile: $('paymentFile'),
+      paidBtn: $('paidBtn'), chatbotToggle: $('chatbotToggle'), chatbot: $('chatbot'), chatbotClose: $('chatbotClose'),
+      chatMessages: $('chatMessages'), chatInput: $('chatInput'), chatSend: $('chatSend'), voiceBtn: $('voiceBtn'),
+      adminBtn: $('adminBtn'), adminModal: $('adminModal'), adminModalClose: $('adminModalClose'), year: $('year')
     };
 
-    // ========================================
-    // UTILITIES
-    // ========================================
-    function showToast(message, type = 'success') {
-      const toast = document.createElement('div');
-      toast.className = `toast ${type}`;
-      toast.innerHTML = `<span>${type === 'success' ? '✓' : '⚠'}</span><span>${message}</span>`;
-      elements.toastContainer.appendChild(toast);
-      setTimeout(() => {
-        toast.style.opacity = '0';
-        toast.style.transform = 'translateX(100%)';
-        setTimeout(() => toast.remove(), 300);
-      }, 4000);
+    function showToast(msg, type = 'success') {
+      const t = document.createElement('div'); t.className = `toast ${type}`;
+      t.innerHTML = `<span>${type==='success'?'✓':'⚠'}</span><span>${msg}</span>`;
+      els.toastContainer.appendChild(t);
+      setTimeout(() => { t.style.opacity='0'; t.style.transform='translateX(100%)'; setTimeout(()=>t.remove(),300); }, 4000);
     }
+    function copyToClipboard(txt) { navigator.clipboard.writeText(txt).then(()=>showToast('Copied!')).catch(()=>showToast('Failed','error')); }
+    function formatPhone(p) { return p.startsWith('+')?p:`+${p}`; }
 
-    function copyToClipboard(text) {
-      navigator.clipboard.writeText(text).then(() => showToast('Number copied to clipboard!')).catch(() => showToast('Failed to copy', 'error'));
-    }
-
-    function formatPhone(phone) { return phone.startsWith('+') ? phone : `+${phone}`; }
-
-    // ========================================
-    // THEME & NAV
-    // ========================================
     function initTheme() {
-      const saved = localStorage.getItem('theme') || 'light';
-      document.documentElement.setAttribute('data-theme', saved);
-      elements.themeToggle.addEventListener('click', () => {
-        const current = document.documentElement.getAttribute('data-theme');
-        const next = current === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-        showToast(`Switched to ${next} mode`);
+      const s = localStorage.getItem('theme')||'light'; document.documentElement.setAttribute('data-theme',s);
+      els.themeToggle.addEventListener('click',()=>{
+        const c = document.documentElement.getAttribute('data-theme'), n = c==='dark'?'light':'dark';
+        document.documentElement.setAttribute('data-theme',n); localStorage.setItem('theme',n); showToast(`Switched to ${n}`);
       });
     }
-
-    function initMobileNav() {
-      elements.hamburger.addEventListener('click', () => {
-        elements.navLinks.classList.toggle('active');
-        elements.hamburger.textContent = elements.navLinks.classList.contains('active') ? '✕' : '☰';
+    function initNav() {
+      els.hamburger.addEventListener('click',()=>{
+        els.navLinks.classList.toggle('active'); els.hamburger.textContent = els.navLinks.classList.contains('active')?'✕':'☰';
       });
-      document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-          elements.navLinks.classList.remove('active');
-          elements.hamburger.textContent = '☰';
-        });
-      });
+      document.querySelectorAll('.nav-links a').forEach(l=>l.addEventListener('click',()=>{els.navLinks.classList.remove('active');els.hamburger.textContent='☰';}));
     }
-
-    // ========================================
-    // RENDER DOCTORS
-    // ========================================
     function renderDoctors() {
-      elements.doctorsGrid.innerHTML = '';
-      doctorsData.forEach(doctor => {
-        const initials = doctor.name.split(' ').map(n => n[0]).slice(0, 2).join('').toUpperCase();
-        const card = document.createElement('div');
-        card.className = 'doctor-card';
-        card.innerHTML = `
-          <div class="doctor-header">
-            <div class="doctor-avatar">${initials}</div>
-            <div class="doctor-info">
-              <h3>${doctor.name}</h3>
-              <div class="doctor-location">📍 ${doctor.location}</div>
-            </div>
-          </div>
-          <div class="doctor-body">
-            <div class="doctor-fee">
-              <span class="fee-label">Consultation Fee</span>
-              <span class="fee-amount">Rs ${doctor.fee.toLocaleString()}</span>
-            </div>
-            <div class="doctor-actions">
-              <button class="btn btn-sm book-btn" data-doctor-id="${doctor.id}">📅 Book Now</button>
-              <a href="https://wa.me/${doctor.whatsapp}" target="_blank" class="btn btn-sm btn-outline" style="background:#25D366;color:white;border:none">💬 WhatsApp</a>
-            </div>
-          </div>
-        `;
-        elements.doctorsGrid.appendChild(card);
+      els.doctorsGrid.innerHTML='';
+      doctorsData.forEach(d=>{
+        const init = d.name.split(' ').map(n=>n[0]).slice(0,2).join('').toUpperCase();
+        const card = document.createElement('div'); card.className='doctor-card';
+        card.innerHTML = `<div class="doctor-header"><div class="doctor-avatar">${init}</div><div class="doctor-info"><h3>${d.name}</h3><div class="doctor-location">📍 ${d.location}</div></div></div>
+          <div class="doctor-body"><div class="doctor-fee"><span class="fee-label">Consultation Fee</span><span class="fee-amount">Rs ${d.fee.toLocaleString()}</span></div>
+          <div class="doctor-actions"><button class="btn btn-sm book-btn" data-id="${d.id}">📅 Book Now</button>
+          <a href="https://wa.me/${d.whatsapp}" target="_blank" class="btn btn-sm btn-outline" style="background:#25D366;color:#fff;border:none">💬 WhatsApp</a></div></div>`;
+        els.doctorsGrid.appendChild(card);
       });
-      document.querySelectorAll('.book-btn').forEach(btn => {
-        btn.addEventListener('click', e => {
-          const id = parseInt(e.currentTarget.dataset.doctorId);
-          const doc = doctorsData.find(d => d.id === id);
-          if (doc) {
-            elements.doctorSelect.value = doc.id;
-            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
-            setTimeout(() => elements.appointmentDate.focus(), 500);
-          }
-        });
-      });
+      document.querySelectorAll('.book-btn').forEach(b=>b.addEventListener('click',e=>{
+        const doc = doctorsData.find(x=>x.id===parseInt(e.currentTarget.dataset.id));
+        if(doc){els.doctorSelect.value=doc.id;document.getElementById('booking').scrollIntoView({behavior:'smooth'});setTimeout(()=>els.appointmentDate.focus(),500);}
+      }));
     }
-
-    function populateDoctorSelect() {
-      elements.doctorSelect.innerHTML = '<option value="">Choose a doctor...</option>';
-      doctorsData.forEach(doc => {
-        const opt = document.createElement('option');
-        opt.value = doc.id;
-        opt.textContent = `${doc.name} - ${doc.location} (Rs ${doc.fee})`;
-        elements.doctorSelect.appendChild(opt);
-      });
+    function populateDoctors() {
+      els.doctorSelect.innerHTML='<option value="">Choose a doctor...</option>';
+      doctorsData.forEach(d=>{const o=document.createElement('option');o.value=d.id;o.textContent=`${d.name} - ${d.location} (Rs ${d.fee})`;els.doctorSelect.appendChild(o);});
     }
-
-    // ========================================
-    // BOOKING SYSTEM
-    // ========================================
     function initBooking() {
-      const today = new Date().toISOString().split('T')[0];
-      elements.appointmentDate.min = today;
-      
-      elements.bookingForm.addEventListener('submit', async e => {
+      els.appointmentDate.min = new Date().toISOString().split('T')[0];
+      els.bookingForm.addEventListener('submit',e=>{
         e.preventDefault();
-        const doctorId = parseInt(elements.doctorSelect.value);
-        const date = elements.appointmentDate.value;
-        const time = elements.appointmentTime.value;
-        const patientName = elements.patientName.value.trim();
-        const patientPhone = elements.patientPhone.value.trim();
-        
-        if (!doctorId || !date || !time || !patientName || !patientPhone) {
-          showToast('Please fill all required fields', 'error');
-          return;
-        }
-        const doctor = doctorsData.find(d => d.id === doctorId);
-        if (!doctor) { showToast('Invalid doctor selection', 'error'); return; }
-        
-        currentBooking = {
-          id: Date.now(),
-          doctorId: doctor.id,
-          doctorName: doctor.name,
-          doctorPhone: doctor.phone,
-          doctorWhatsapp: doctor.whatsapp,
-          date, time, patientName, patientPhone,
-          bookingFee: 200,
-          status: 'pending_payment',
-          createdAt: new Date().toISOString()
-        };
-        
-        elements.bookingDetails.innerHTML = `
-          <p><strong>Doctor:</strong> ${doctor.name}</p>
-          <p><strong>Date:</strong> ${new Date(date).toLocaleDateString('en-PK', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
-          <p><strong>Time:</strong> ${time}</p>
-          <p><strong>Patient:</strong> ${patientName}</p>
-          <p><strong>Booking Fee:</strong> Rs 200</p>
-        `;
-        
-        const msg = encodeURIComponent(`Hello GreenCare Digital Hospital,\nI have booked an appointment.\n\nDoctor: ${doctor.name}\nDate: ${new Date(date).toLocaleDateString('en-PK')}\nTime: ${time}\n\nI will send Rs 200 booking fee.\nPlease confirm.`);
-        elements.whatsappConfirm.href = `https://wa.me/${doctor.whatsapp}?text=${msg}`;
-        elements.callDoctor.href = `tel:${formatPhone(doctor.phone)}`;
-        
-        elements.bookingModal.classList.add('active');
-        elements.bookingForm.reset();
-        showToast('Appointment booked! Please complete payment.');
+        const did = parseInt(els.doctorSelect.value), date=els.appointmentDate.value, time=els.appointmentTime.value,
+              name=els.patientName.value.trim(), phone=els.patientPhone.value.trim();
+        if(!did||!date||!time||!name||!phone){showToast('Fill all fields','error');return;}
+        const doc = doctorsData.find(d=>d.id===did); if(!doc){showToast('Invalid doctor','error');return;}
+        currentBooking = {id:Date.now(),doctorId:doc.id,doctorName:doc.name,doctorPhone:doc.phone,doctorWhatsapp:doc.whatsapp,
+          date,time,patientName:name,patientPhone:phone,bookingFee:200,status:'pending_payment',createdAt:new Date().toISOString()};
+        els.bookingDetails.innerHTML = `<p><strong>Doctor:</strong> ${doc.name}</p><p><strong>Date:</strong> ${new Date(date).toLocaleDateString('en-PK',{weekday:'long',year:'numeric',month:'long',day:'numeric'})}</p>
+          <p><strong>Time:</strong> ${time}</p><p><strong>Patient:</strong> ${name}</p><p><strong>Booking Fee:</strong> Rs 200</p>`;
+        const msg = encodeURIComponent(`Hello GreenCare Digital Hospital,\nI have booked an appointment.\n\nDoctor: ${doc.name}\nDate: ${new Date(date).toLocaleDateString('en-PK')}\nTime: ${time}\n\nI will send Rs 200 booking fee.\nPlease confirm.`);
+        els.whatsappConfirm.href = `https://wa.me/${doc.whatsapp}?text=${msg}`; els.callDoctor.href = `tel:${formatPhone(doc.phone)}`;
+        els.bookingModal.classList.add('active'); els.bookingForm.reset(); showToast('Appointment booked! Complete payment.');
       });
     }
-
-    // ========================================
-    // MODALS
-    // ========================================
     function initModals() {
-      elements.modalClose.addEventListener('click', () => elements.bookingModal.classList.remove('active'));
-      elements.adminModalClose.addEventListener('click', () => elements.adminModal.classList.remove('active'));
-      [elements.bookingModal, elements.adminModal].forEach(modal => {
-        modal.addEventListener('click', e => { if (e.target === modal) modal.classList.remove('active'); });
-      });
-      elements.adminBtn.addEventListener('click', () => elements.adminModal.classList.add('active'));
+      els.modalClose.addEventListener('click',()=>els.bookingModal.classList.remove('active'));
+      els.adminModalClose.addEventListener('click',()=>els.adminModal.classList.remove('active'));
+      [els.bookingModal,els.adminModal].forEach(m=>m.addEventListener('click',e=>{if(e.target===m)m.classList.remove('active')}));
+      els.adminBtn.addEventListener('click',()=>els.adminModal.classList.add('active'));
     }
-
-    // ========================================
-    // PAYMENT SYSTEM
-    // ========================================
     function initPayment() {
-      elements.paymentCards.forEach(card => {
-        card.addEventListener('click', () => {
-          elements.paymentCards.forEach(c => c.classList.remove('selected'));
-          card.classList.add('selected');
-          selectedPaymentMethod = card.dataset.method;
-          showToast(`Selected ${card.dataset.method === 'jazzcash' ? 'JazzCash' : 'EasyPaisa'}`);
-        });
-      });
-      elements.copyButtons.forEach(btn => {
-        btn.addEventListener('click', e => { e.stopPropagation(); copyToClipboard(btn.dataset.copy); });
-      });
-      elements.uploadArea.addEventListener('click', () => elements.paymentFile.click());
-      elements.paymentFile.addEventListener('change', e => {
-        if (e.target.files[0]) {
-          uploadedFile = e.target.files[0];
-          elements.uploadArea.innerHTML = `✓ ${uploadedFile.name}<br><small style="color:var(--accent-primary)">File selected</small>`;
-          showToast('Screenshot uploaded');
-        }
-      });
-      ['dragenter','dragover','dragleave','drop'].forEach(ev => {
-        elements.uploadArea.addEventListener(ev, e => { e.preventDefault(); e.stopPropagation(); });
-      });
-      ['dragenter','dragover'].forEach(ev => {
-        elements.uploadArea.addEventListener(ev, () => elements.uploadArea.classList.add('dragover'));
-      });
-      ['dragleave','drop'].forEach(ev => {
-        elements.uploadArea.addEventListener(ev, () => elements.uploadArea.classList.remove('dragover'));
-      });
-      elements.uploadArea.addEventListener('drop', e => {
-        const file = e.dataTransfer.files[0];
-        if (file && file.type.startsWith('image/')) {
-          uploadedFile = file;
-          elements.uploadArea.innerHTML = `✓ ${file.name}<br><small style="color:var(--accent-primary)">File selected</small>`;
-          showToast('Screenshot uploaded');
-        } else showToast('Please upload an image file', 'error');
-      });
-      
-      elements.paidBtn.addEventListener('click', async () => {
-        if (!selectedPaymentMethod) { showToast('Please select a payment method', 'error'); return; }
-        if (!uploadedFile) { showToast('Please upload payment screenshot', 'error'); return; }
-        if (!currentBooking) { showToast('No active booking found', 'error'); return; }
-        
-        const originalText = elements.paidBtn.innerHTML;
-        elements.paidBtn.disabled = true;
-        elements.paidBtn.innerHTML = '⏳ Processing...';
-        
-        try {
-          // Upload to Firebase Storage
-          const storageRef = storage.ref(`payments/${currentBooking.id}_${Date.now()}.jpg`);
-          await storageRef.put(uploadedFile);
-          const downloadURL = await storageRef.getDownloadURL();
-          
-          // Save to Firestore
-          await db.collection('payments').add({
-            bookingId: currentBooking.id,
-            doctorId: currentBooking.doctorId,
-            doctorName: currentBooking.doctorName,
-            patientName: currentBooking.patientName,
-            patientPhone: currentBooking.patientPhone,
-            amount: currentBooking.bookingFee,
-            method: selectedPaymentMethod,
-            screenshotUrl: downloadURL,
-            status: 'pending_verification',
-            submittedAt: new Date().toISOString()
-          });
-          
-          await db.collection('appointments').add({
-            ...currentBooking,
-            paymentStatus: 'submitted',
-            paymentMethod: selectedPaymentMethod,
-            screenshotUrl: downloadURL,
-            updatedAt: new Date().toISOString()
-          });
-          
-          showToast('Payment submitted successfully! We\'ll confirm shortly.');
-          elements.paymentCards.forEach(c => c.classList.remove('selected'));
-          elements.uploadArea.innerHTML = '📎 Click or drag to upload screenshot';
-          elements.paymentFile.value = '';
-          selectedPaymentMethod = null;
-          uploadedFile = null;
-          
-          setTimeout(() => { elements.bookingModal.classList.remove('active'); currentBooking = null; }, 2000);
-        } catch (error) {
-          console.error('Payment error:', error);
-          showToast('Failed to process payment. Please try again.', 'error');
-        } finally {
-          elements.paidBtn.disabled = false;
-          elements.paidBtn.innerHTML = originalText;
-        }
+      els.paymentCards.forEach(c=>c.addEventListener('click',()=>{
+        els.paymentCards.forEach(x=>x.classList.remove('selected')); c.classList.add('selected'); selectedPaymentMethod=c.dataset.method;
+        showToast(`Selected ${c.dataset.method==='jazzcash'?'JazzCash':'EasyPaisa'}`);
+      }));
+      els.copyButtons.forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();copyToClipboard(b.dataset.copy);}));
+      els.uploadArea.addEventListener('click',()=>els.paymentFile.click());
+      els.paymentFile.addEventListener('change',e=>{if(e.target.files[0]){uploadedFile=e.target.files[0];els.uploadArea.innerHTML=`✓ ${uploadedFile.name}<br><small style="color:var(--accent-primary)">Selected</small>`;showToast('Uploaded');}});
+      ['dragenter','dragover','dragleave','drop'].forEach(ev=>els.uploadArea.addEventListener(ev,e=>{e.preventDefault();e.stopPropagation()}));
+      ['dragenter','dragover'].forEach(ev=>els.uploadArea.addEventListener(ev,()=>els.uploadArea.classList.add('dragover')));
+      ['dragleave','drop'].forEach(ev=>els.uploadArea.addEventListener(ev,()=>els.uploadArea.classList.remove('dragover')));
+      els.uploadArea.addEventListener('drop',e=>{const f=e.dataTransfer.files[0];if(f&&f.type.startsWith('image/')){uploadedFile=f;els.uploadArea.innerHTML=`✓ ${f.name}<br><small style="color:var(--accent-primary)">Selected</small>`;showToast('Uploaded');}else showToast('Upload image only','error');});
+      els.paidBtn.addEventListener('click',async()=>{
+        if(!selectedPaymentMethod){showToast('Select payment method','error');return;}
+        if(!uploadedFile){showToast('Upload screenshot','error');return;}
+        if(!currentBooking){showToast('No booking found','error');return;}
+        const orig = els.paidBtn.innerHTML; els.paidBtn.disabled=true; els.paidBtn.innerHTML='⏳ Processing...';
+        try{
+          const ref = window.storage.ref(`payments/${currentBooking.id}_${Date.now()}.jpg`);
+          await ref.put(uploadedFile); const url = await ref.getDownloadURL();
+          await window.db.collection('payments').add({bookingId:currentBooking.id,doctorId:currentBooking.doctorId,doctorName:currentBooking.doctorName,
+            patientName:currentBooking.patientName,patientPhone:currentBooking.patientPhone,amount:currentBooking.bookingFee,method:selectedPaymentMethod,
+            screenshotUrl:url,status:'pending_verification',submittedAt:new Date().toISOString()});
+          await window.db.collection('appointments').add({...currentBooking,paymentStatus:'submitted',paymentMethod:selectedPaymentMethod,screenshotUrl:url,updatedAt:new Date().toISOString()});
+          showToast('Payment submitted! We\'ll confirm shortly.');
+          els.paymentCards.forEach(c=>c.classList.remove('selected')); els.uploadArea.innerHTML='📎 Click or drag to upload screenshot'; els.paymentFile.value='';
+          selectedPaymentMethod=null; uploadedFile=null; setTimeout(()=>{els.bookingModal.classList.remove('active');currentBooking=null;},2000);
+        }catch(err){console.error(err);showToast('Payment failed. Try again.','error');}
+        finally{els.paidBtn.disabled=false;els.paidBtn.innerHTML=orig;}
       });
     }
-
-    // ========================================
-    // AI CHATBOT
-    // ========================================
     function initChatbot() {
-      elements.chatbotToggle.addEventListener('click', () => {
-        elements.chatbot.classList.toggle('active');
-        if (elements.chatbot.classList.contains('active')) elements.chatInput.focus();
-      });
-      elements.chatbotClose.addEventListener('click', () => elements.chatbot.classList.remove('active'));
-      
-      function sendMessage() {
-        const msg = elements.chatInput.value.trim();
-        if (!msg) return;
-        addMessage(msg, 'user');
-        elements.chatInput.value = '';
-        setTimeout(() => { addMessage(getAIResponse(msg), 'bot'); }, 800);
-      }
-      elements.chatSend.addEventListener('click', sendMessage);
-      elements.chatInput.addEventListener('keypress', e => { if (e.key === 'Enter') sendMessage(); });
-      elements.voiceBtn.addEventListener('click', () => showToast('🎤 Voice input activated (demo mode)'));
-      
-      function addMessage(text, sender) {
-        const div = document.createElement('div');
-        div.className = `message ${sender}`;
-        div.innerHTML = text.replace(/\n/g, '<br>');
-        elements.chatMessages.appendChild(div);
-        elements.chatMessages.scrollTop = elements.chatMessages.scrollHeight;
-      }
-      
-      function getAIResponse(input) {
-        const lower = input.toLowerCase();
-        if (lower.includes('symptom') || lower.includes('fever') || lower.includes('pain') || lower.includes('headache'))
-          return "I understand you're experiencing symptoms. 🩺\n\nFor accurate diagnosis, I recommend consulting a doctor. Would you like me to:\n• Suggest a specialist based on your symptoms?\n• Help you book an appointment?\n• Provide general health tips?";
-        if (lower.includes('book') || lower.includes('appointment') || lower.includes('schedule'))
-          return "I'd be happy to help you book an appointment! 📅\n\n1. Visit our Doctors section\n2. Select your preferred specialist\n3. Choose date & time\n4. Pay Rs 200 booking fee\n\nNeed help finding the right doctor? Tell me your concern!";
-        if (lower.includes('doctor') || lower.includes('specialist') || lower.includes('cardiologist') || lower.includes('dentist'))
-          return "We have expert specialists across Pakistan! 👨‍⚕️\n\n• Heart specialists in Karachi (Tabba, NICVD)\n• General physicians in Lahore & Islamabad\n• Dental care at Hamed Dental Clinic\n\nWhich type of doctor do you need? I can suggest the best match!";
-        if (lower.includes('payment') || lower.includes('pay') || lower.includes('fee') || lower.includes('jazzcash') || lower.includes('easypaisa'))
-          return "💰 Booking Fee: Rs 200\n\nPayment Methods:\n• JazzCash: 03272358384\n• EasyPaisa: 034416958360\n\nAfter payment, upload your screenshot for instant confirmation. Your appointment is secured upon verification!";
-        if (lower.includes('hello') || lower.includes('hi') || lower.includes('hey'))
-          return "Hello! 👋 I'm your GreenCare AI health assistant.\n\nHow can I help you today?\n• Check symptoms\n• Find a doctor\n• Book appointment\n• Payment help\n• General health questions";
-        if (lower.includes('thank') || lower.includes('thanks'))
-          return "You're welcome! 😊 Remember, your health is our priority. Don't hesitate to reach out anytime. Is there anything else I can help you with?";
+      els.chatbotToggle.addEventListener('click',()=>{els.chatbot.classList.toggle('active');if(els.chatbot.classList.contains('active'))els.chatInput.focus();});
+      els.chatbotClose.addEventListener('click',()=>els.chatbot.classList.remove('active'));
+      function send(){const m=els.chatInput.value.trim();if(!m)return;addMsg(m,'user');els.chatInput.value='';setTimeout(()=>addMsg(aiResp(m),'bot'),800);}
+      els.chatSend.addEventListener('click',send); els.chatInput.addEventListener('keypress',e=>{if(e.key==='Enter')send();});
+      els.voiceBtn.addEventListener('click',()=>showToast('🎤 Voice activated (demo)'));
+      function addMsg(t,s){const d=document.createElement('div');d.className=`message ${s}`;d.innerHTML=t.replace(/\n/g,'<br>');els.chatMessages.appendChild(d);els.chatMessages.scrollTop=els.chatMessages.scrollHeight;}
+      function aiResp(i){const l=i.toLowerCase();
+        if(l.includes('symptom')||l.includes('fever')||l.includes('pain')||l.includes('headache'))return "I understand you're experiencing symptoms. 🩺\n\nFor accurate diagnosis, I recommend consulting a doctor. Would you like me to:\n• Suggest a specialist?\n• Help book an appointment?\n• Provide health tips?";
+        if(l.includes('book')||l.includes('appointment')||l.includes('schedule'))return "I'd be happy to help you book! 📅\n\n1. Visit Doctors section\n2. Select specialist\n3. Choose date & time\n4. Pay Rs 200 booking fee\n\nNeed help finding the right doctor?";
+        if(l.includes('doctor')||l.includes('specialist')||l.includes('cardiologist')||l.includes('dentist'))return "We have expert specialists across Pakistan! 👨‍⚕️\n\n• Heart specialists in Karachi (Tabba, NICVD)\n• General physicians in Lahore & Islamabad\n• Dental care at Hamed Dental Clinic\n\nWhich type do you need?";
+        if(l.includes('payment')||l.includes('pay')||l.includes('fee')||l.includes('jazzcash')||l.includes('easypaisa'))return "💰 Booking Fee: Rs 200\n\nPayment Methods:\n• JazzCash: 03272358384\n• EasyPaisa: 034416958360\n\nAfter payment, upload screenshot for confirmation!";
+        if(l.includes('hello')||l.includes('hi')||l.includes('hey'))return "Hello! 👋 I'm your GreenCare AI health assistant.\n\nHow can I help today?\n• Check symptoms\n• Find a doctor\n• Book appointment\n• Payment help\n• General health questions";
+        if(l.includes('thank')||l.includes('thanks'))return "You're welcome! 😊 Your health is our priority. Anything else I can help with?";
         return "I'm here to help with your healthcare needs! 🌟\n\nI can assist with:\n• Symptom guidance\n• Doctor recommendations\n• Booking appointments\n• Payment support\n\nWhat would you like to know?";
       }
     }
-
-    // ========================================
-    // SMOOTH SCROLL
-    // ========================================
-    function initSmoothScroll() {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-      });
+    function initScroll(){document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'});}));}
+    async function initApp(){
+      try{
+        els.year.textContent = new Date().getFullYear();
+        initTheme(); initNav(); initModals(); initScroll(); populateDoctors(); renderDoctors(); initBooking(); initPayment(); initChatbot();
+        setTimeout(()=>els.loadingOverlay.classList.add('hidden'),800); setTimeout(()=>showToast('Welcome to GreenCare Digital Hospital! 🏥'),1200);
+      }catch(err){console.error('Init error:',err);showToast('App loaded with limited features','error');els.loadingOverlay.classList.add('hidden');}
     }
-
-    // ========================================
-    // INIT APP
-    // ========================================
-    async function initApp() {
-      try {
-        elements.year.textContent = new Date().getFullYear();
-        initTheme();
-        initMobileNav();
-        initModals();
-        initSmoothScroll();
-        populateDoctorSelect();
-        renderDoctors();
-        initBooking();
-        initPayment();
-        initChatbot();
-        setTimeout(() => elements.loadingOverlay.classList.add('hidden'), 800);
-        setTimeout(() => showToast('Welcome to GreenCare Digital Hospital! 🏥'), 1200);
-      } catch (error) {
-        console.error('Init error:', error);
-        showToast('App loaded with limited features', 'error');
-        elements.loadingOverlay.classList.add('hidden');
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', initApp);
-    window.addEventListener('error', e => { if (e.message.includes('firebase')) console.warn('Firebase feature unavailable in demo mode'); });
+    document.addEventListener('DOMContentLoaded',initApp);
+    window.addEventListener('error',e=>{if(e.message.includes('firebase'))console.warn('Firebase feature in demo mode');});
   </script>
 </body>
 </html>
