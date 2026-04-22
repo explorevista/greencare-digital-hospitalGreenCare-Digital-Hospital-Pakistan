@@ -1,12 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-PK" data-theme="light">
 <head>
-<title>Privacy Policy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - GreenCare Digital Hospital Pakistan</title>
+    <meta name="description" content="Privacy Policy for GreenCare Digital Hospital Pakistan.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .policy-container { max-width: 800px; margin: 4rem auto; padding: 0 1.5rem; }
+        .policy-content h1 { font-size: 2rem; margin-bottom: 1rem; color: var(--secondary); }
+        .policy-content h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; color: var(--primary); }
+        .policy-content p, .policy-content li { color: var(--text-muted); margin-bottom: 1rem; line-height: 1.8; }
+        .policy-content ul { padding-left: 1.5rem; list-style: disc; }
+        .back-link { display: inline-block; margin-bottom: 2rem; color: var(--primary); font-weight: 600; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<p>This website collects user data only for appointment booking and contact purposes.</p>
-<p>We do not share your personal data with third parties.</p>
-<p>Contact: Muhammadalikn53@gmail.com</p>
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand-logo"><span class="brand-name">GreenCare</span></a>
+        </div>
+    </header>
+
+    <main class="policy-container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        <article class="policy-content">
+            <h1>Privacy Policy</h1>
+            <p>Last Updated: <span id="date"></span></p>
+
+            <h2>1. Introduction</h2>
+            <p>GreenCare Digital Hospital Pakistan ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our booking services.</p>
+
+            <h2>2. Information We Collect</h2>
+            <p>We may collect information about you in a variety of ways, including:</p>
+            <ul>
+                <li><strong>Personal Data:</strong> Name, email address, telephone number, and address that you voluntarily give to us when you register an account or book an appointment.</li>
+                <li><strong>Booking Information:</strong> Details regarding your medical appointment preferences, selected doctor, and payment status.</li>
+                <li><strong>Derivative Data:</strong> IP address, browser type, operating system, and referring URLs.</li>
+            </ul>
+
+            <h2>3. Use of Your Information</h2>
+            <p>Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you to:</p>
+            <ul>
+                <li>Process and manage your medical appointments.</li>
+                <li>Send you appointment confirmations and reminders via WhatsApp or Email.</li>
+                <li>Process payments and maintain transaction records.</li>
+                <li>Improve our website and services.</li>
+            </ul>
+
+            <h2>4. Disclosure of Your Information</h2>
+            <p>We may share information we have collected about you in certain situations. Your information may be disclosed to third-party doctors to facilitate your appointment. We do not sell your personal information to advertisers.</p>
+
+            <h2>5. Security of Your Information</h2>
+            <p>We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that no security measures are perfect or impenetrable.</p>
+
+            <h2>6. Contact Us</h2>
+            <p>If you have questions or comments about this Privacy Policy, please contact us at:</p>
+            <p>
+                <strong>GreenCare Digital Hospital Pakistan</strong><br>
+                Email: muhammadalikn53@gmail.com<br>
+                Phone: +92 344 1695860<br>
+                Karachi, Pakistan
+            </p>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> GreenCare Digital Hospital Pakistan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('date').textContent = new Date().toLocaleDateString('en-PK');
+    </script>
 </body>
 </html>
