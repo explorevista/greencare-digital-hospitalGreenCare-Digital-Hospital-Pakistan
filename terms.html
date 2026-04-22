@@ -1,12 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-PK" data-theme="light">
 <head>
-<title>Terms and Conditions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - GreenCare Digital Hospital Pakistan</title>
+    <meta name="description" content="Terms of Service for GreenCare Digital Hospital Pakistan.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .policy-container { max-width: 800px; margin: 4rem auto; padding: 0 1.5rem; }
+        .policy-content h1 { font-size: 2rem; margin-bottom: 1rem; color: var(--secondary); }
+        .policy-content h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; color: var(--primary); }
+        .policy-content p, .policy-content li { color: var(--text-muted); margin-bottom: 1rem; line-height: 1.8; }
+        .policy-content ul { padding-left: 1.5rem; list-style: disc; }
+        .back-link { display: inline-block; margin-bottom: 2rem; color: var(--primary); font-weight: 600; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
-<h1>Terms & Conditions</h1>
-<p>By using this website, you agree to our terms.</p>
-<p>Appointments must be confirmed via payment.</p>
-<p>GreenCare Digital Hospital is not responsible for medical outcomes.</p>
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand-logo"><span class="brand-name">GreenCare</span></a>
+        </div>
+    </header>
+
+    <main class="policy-container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        <article class="policy-content">
+            <h1>Terms of Service</h1>
+            <p>Last Updated: <span id="date"></span></p>
+
+            <h2>1. Agreement to Terms</h2>
+            <p>By accessing our website, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws.</p>
+
+            <h2>2. Use License</h2>
+            <p>Permission is granted to temporarily download one copy of the materials (information or software) on GreenCare's website for personal, non-commercial transitory viewing only.</p>
+
+            <h2>3. Medical Disclaimer</h2>
+            <p>The information provided by GreenCare Digital Hospital Pakistan is for general informational and educational purposes only. All information on the site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the site.</p>
+            <p><strong>IMPORTANT:</strong> The site cannot and does not contain medical advice. The medical information is provided for general informational and educational purposes only and is not a substitute for professional advice.</p>
+
+            <h2>4. Booking and Payments</h2>
+            <p>When you book an appointment, you agree to pay the consultation fee and any associated booking charges. Cancellations must be made at least 24 hours in advance. GreenCare reserves the right to reschedule appointments if the doctor is unavailable.</p>
+
+            <h2>5. Limitations</h2>
+            <p>In no event shall GreenCare or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on GreenCare's website.</p>
+
+            <h2>6. Governing Law</h2>
+            <p>These terms and conditions are governed by and construed in accordance with the laws of Pakistan and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>
+
+            <h2>7. Contact Information</h2>
+            <p>
+                <strong>GreenCare Digital Hospital Pakistan</strong><br>
+                Email: muhammadalikn53@gmail.com<br>
+                Karachi, Pakistan
+            </p>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> GreenCare Digital Hospital Pakistan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('date').textContent = new Date().toLocaleDateString('en-PK');
+    </script>
 </body>
 </html>
