@@ -1,1 +1,689 @@
 
+<!DOCTYPE html>
+<html lang="en-PK" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GreenCare Digital Hospital Pakistan. Book appointments with verified doctors in Karachi, Lahore, Islamabad. Founded by Muhammad Ali.">
+    <meta name="keywords" content="doctor booking Pakistan, online doctor, GreenCare, Muhammad Ali, telemedicine Karachi">
+    <meta name="author" content="Muhammad Ali">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://greencare-hospital.netlify.app/">
+    <meta property="og:title" content="GreenCare Digital Hospital Pakistan">
+    <meta property="og:description" content="Modern Healthcare | Trusted Doctors | Digital Care">
+    <meta property="og:image" content="assets/og-image.jpg">
+    <title>GreenCare Digital Hospital Pakistan | Book Trusted Doctors Online</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #10b981;
+            --primary-dark: #059669;
+            --primary-light: #d1fae5;
+            --secondary: #0f172a;
+            --secondary-light: #1e293b;
+            --accent: #d4af37;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --text-light: #94a3b8;
+            --bg-body: #f8fafc;
+            --bg-surface: #ffffff;
+            --bg-surface-alt: #f1f5f9;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-glow: 0 0 20px rgba(16, 185, 129, 0.25);
+            --font-heading: 'Poppins', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --container-width: 1200px;
+            --header-height: 80px;
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 24px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        [data-theme="dark"] {
+            --primary: #34d399;
+            --primary-dark: #10b981;
+            --primary-light: #064e3b;
+            --secondary: #f8fafc;
+            --secondary-light: #cbd5e1;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --text-light: #64748b;
+            --bg-body: #0b1120;
+            --bg-surface: #1e293b;
+            --bg-surface-alt: #334155;
+            --border-color: #334155;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body { font-family: var(--font-body); color: var(--text-main); background-color: var(--bg-body); line-height: 1.6; transition: background-color 0.3s, color 0.3s; overflow-x: hidden; }
+        img, video { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        ul { list-style: none; }
+        button { cursor: pointer; border: none; background: none; font-family: inherit; }
+        input, select, textarea { font-family: inherit; font-size: 1rem; }
+        .container { width: 100%; max-width: var(--container-width); margin: 0 auto; padding: 0 1.5rem; }
+        .section { padding: 5rem 0; }
+        .section-header { text-align: center; margin-bottom: 3rem; }
+        .section-title { font-family: var(--font-heading); font-size: clamp(2rem, 4vw, 2.5rem); font-weight: 700; color: var(--secondary); margin-bottom: 0.75rem; position: relative; display: inline-block; }
+        [data-theme="dark"] .section-title { color: #fff; }
+        .section-title::after { content: ''; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 50px; height: 3px; background: var(--primary); border-radius: 2px; }
+        .section-subtitle { color: var(--text-muted); font-size: 1.05rem; max-width: 600px; margin: 0 auto; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem 1.5rem; font-weight: 600; border-radius: var(--radius-sm); transition: var(--transition); font-size: 0.95rem; border: 2px solid transparent; }
+        .btn-primary { background-color: var(--primary); color: white; }
+        .btn-primary:hover { background-color: var(--primary-dark); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+        .btn-outline { border-color: var(--primary); color: var(--primary); background: transparent; }
+        .btn-outline:hover { background-color: var(--primary); color: white; }
+        .btn-whatsapp { background-color: #25D366; color: white; }
+        .btn-whatsapp:hover { background-color: #128C7E; }
+        .btn-block { width: 100%; }
+        .btn-sm { padding: 0.6rem 1rem; font-size: 0.85rem; }
+        .hidden { display: none !important; }
+        .skip-link { position: absolute; top: -40px; left: 0; background: var(--primary); color: white; padding: 0.5rem 1rem; z-index: 9999; transition: top 0.2s; }
+        .skip-link:focus { top: 0; }
+
+        /* Header */
+        .site-header { height: var(--header-height); background-color: var(--bg-surface); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 100; display: flex; align-items: center; box-shadow: var(--shadow-sm); }
+        .header-container { display: flex; justify-content: space-between; align-items: center; }
+        .brand-logo { display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-heading); font-size: 1.4rem; font-weight: 700; color: var(--secondary); }
+        [data-theme="dark"] .brand-name { color: #fff; }
+        .nav-toggle { display: none; width: 40px; height: 40px; position: relative; }
+        .hamburger { display: block; width: 22px; height: 2px; background-color: var(--text-main); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: var(--transition); }
+        .hamburger::before, .hamburger::after { content: ''; position: absolute; width: 100%; height: 100%; background-color: var(--text-main); transition: var(--transition); }
+        .hamburger::before { top: -7px; }
+        .hamburger::after { top: 7px; }
+        .nav-toggle[aria-expanded="true"] .hamburger { background-color: transparent; }
+        .nav-toggle[aria-expanded="true"] .hamburger::before { transform: rotate(45deg); top: 0; }
+        .nav-toggle[aria-expanded="true"] .hamburger::after { transform: rotate(-45deg); top: 0; }
+        .primary-nav { display: flex; align-items: center; gap: 1.5rem; }
+        .nav-list { display: flex; gap: 1.5rem; }
+        .nav-link { font-weight: 500; color: var(--text-muted); padding: 0.5rem 0; position: relative; }
+        .nav-link:hover, .nav-link.active { color: var(--primary); }
+        .nav-link.highlight { background-color: var(--primary-light); color: var(--primary-dark); padding: 0.5rem 1rem; border-radius: var(--radius-sm); font-weight: 600; }
+        [data-theme="dark"] .nav-link.highlight { background-color: var(--primary-dark); color: white; }
+        .theme-toggle { width: 40px; height: 40px; border-radius: 50%; background-color: var(--bg-surface-alt); display: flex; align-items: center; justify-content: center; color: var(--text-muted); transition: var(--transition); border: 1px solid var(--border-color); }
+        .theme-toggle:hover { color: var(--primary); transform: rotate(15deg); }
+        .icon-moon { display: none; }
+        [data-theme="dark"] .icon-sun { display: none; }
+        [data-theme="dark"] .icon-moon { display: block; }
+
+        /* Hero */
+        .hero-section { position: relative; min-height: 85vh; display: flex; align-items: center; overflow: hidden; padding-top: var(--header-height); }
+        .hero-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+        .hero-bg video, .hero-bg img { width: 100%; height: 100%; object-fit: cover; }
+        .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.6)); }
+        .hero-content { position: relative; color: white; max-width: 800px; z-index: 1; }
+        .hero-title { font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.15; margin-bottom: 1.5rem; font-weight: 700; text-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+        .hero-subtitle { font-size: 1.2rem; margin-bottom: 2.5rem; color: #e2e8f0; max-width: 650px; line-height: 1.7; }
+        .hero-actions { display: flex; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap; }
+        .hero-stats { display: flex; gap: 2.5rem; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 2rem; flex-wrap: wrap; }
+        .stat-item { display: flex; flex-direction: column; }
+        .stat-number { font-size: 2rem; font-weight: 800; color: var(--accent); }
+        .stat-label { font-size: 0.9rem; color: #cbd5e1; margin-top: 0.25rem; }
+
+        /* About */
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .about-image-wrapper { position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); }
+        .about-image { width: 100%; height: 450px; object-fit: cover; transition: transform 0.5s ease; }
+        .about-image-wrapper:hover .about-image { transform: scale(1.03); }
+        .about-badge { position: absolute; bottom: 20px; right: 20px; background: var(--bg-surface); padding: 1rem 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-md); display: flex; flex-direction: column; align-items: center; border: 1px solid var(--border-color); }
+        .about-badge strong { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); }
+        .about-badge span { font-weight: 700; color: var(--primary); font-size: 1.1rem; margin-top: 0.25rem; }
+        .about-content .lead { font-size: 1.15rem; font-weight: 500; color: var(--text-main); margin-bottom: 1rem; line-height: 1.6; }
+        .about-content p { color: var(--text-muted); margin-bottom: 1.5rem; }
+        .feature-list { margin: 2rem 0; display: flex; flex-direction: column; gap: 1.5rem; }
+        .feature-item { display: flex; gap: 1rem; align-items: flex-start; }
+        .feature-icon { width: 48px; height: 48px; background: var(--primary-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--primary); }
+        [data-theme="dark"] .feature-icon { background: rgba(16,185,129,0.15); }
+        .feature-item h4 { margin-bottom: 0.25rem; color: var(--secondary); font-size: 1.05rem; }
+        [data-theme="dark"] .feature-item h4 { color: #fff; }
+        .feature-item p { color: var(--text-muted); font-size: 0.95rem; margin: 0; }
+        .powered-by { margin-top: 2rem; padding: 1rem; background: var(--bg-surface-alt); border-radius: var(--radius-sm); text-align: center; color: var(--text-muted); font-size: 0.95rem; border: 1px solid var(--border-color); }
+        .powered-by strong { color: var(--primary); }
+
+        /* Doctors */
+        .doctors-section { background-color: var(--bg-surface-alt); }
+        .doctors-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+        .doctor-card { background: var(--bg-surface); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); transition: var(--transition); display: flex; flex-direction: column; gap: 1rem; position: relative; overflow: hidden; }
+        .doctor-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--primary); transform: scaleX(0); transition: transform 0.3s ease; transform-origin: left; }
+        .doctor-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: var(--primary); }
+        .doctor-card:hover::before { transform: scaleX(1); }
+        .doctor-info h3 { font-size: 1.2rem; margin-bottom: 0.25rem; color: var(--secondary); }
+        [data-theme="dark"] .doctor-info h3 { color: #fff; }
+        .doctor-location { color: var(--text-muted); font-size: 0.85rem; display: flex; align-items: center; gap: 0.4rem; }
+        .doctor-fee { font-size: 1.4rem; font-weight: 700; color: var(--primary); margin-top: auto; }
+        .doctor-actions { margin-top: 0.5rem; display: flex; gap: 0.75rem; }
+        .doctor-actions .btn { flex: 1; }
+
+        /* Booking */
+        .booking-container { display: flex; justify-content: center; }
+        .booking-card { background: var(--bg-surface); padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); width: 100%; max-width: 650px; border: 1px solid var(--border-color); }
+        .booking-form .form-group { margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.4rem; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .form-group label { font-weight: 500; font-size: 0.9rem; color: var(--text-muted); }
+        .form-group input, .form-group select { padding: 0.8rem 1rem; border: 1px solid var(--border-color); border-radius: var(--radius-sm); background: var(--bg-body); color: var(--text-main); outline: none; transition: var(--transition); }
+        .form-group input:focus, .form-group select:focus { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-light); }
+        .error-msg { color: #ef4444; font-size: 0.8rem; min-height: 1.2rem; }
+        .booking-success { text-align: center; padding: 2rem 0; animation: fadeIn 0.5s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+        .success-icon { width: 70px; height: 70px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1.5rem; box-shadow: var(--shadow-glow); }
+        .payment-methods { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+        .payment-card { background: var(--bg-surface-alt); padding: 1rem; border-radius: var(--radius-sm); display: flex; flex-direction: column; align-items: center; border: 1px solid var(--border-color); }
+        .payment-label { font-weight: 600; margin-bottom: 0.4rem; color: var(--text-muted); font-size: 0.9rem; }
+        .payment-code { font-family: monospace; font-size: 1.1rem; font-weight: 700; color: var(--text-main); }
+        .btn-text-link { background: none; color: var(--text-muted); text-decoration: underline; margin-top: 1rem; display: block; width: 100%; font-size: 0.9rem; }
+        .btn-text-link:hover { color: var(--primary); }
+
+        /* Contact */
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .contact-card { background: var(--bg-surface); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); transition: var(--transition); }
+        .contact-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--primary); }
+        .contact-card h3 { font-size: 1.15rem; margin-bottom: 1.5rem; color: var(--secondary); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; display: inline-block; }
+        [data-theme="dark"] .contact-card h3 { color: #fff; }
+        .contact-list li { margin-bottom: 0.75rem; }
+        .contact-list a { color: var(--text-muted); transition: var(--transition); display: flex; align-items: center; gap: 0.5rem; }
+        .contact-list a:hover { color: var(--primary); padding-left: 4px; }
+        .social-links { display: flex; flex-wrap: wrap; gap: 1rem; }
+        .social-link { width: 44px; height: 44px; background: var(--bg-surface-alt); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-muted); border: 1px solid var(--border-color); transition: var(--transition); }
+        .social-link:hover { background: var(--primary); color: white; border-color: var(--primary); transform: translateY(-3px); }
+        .social-link svg { width: 20px; height: 20px; fill: currentColor; }
+
+        /* Footer */
+        .site-footer { background-color: var(--secondary); color: #cbd5e1; padding: 4rem 0 2rem; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+        .footer-brand .brand-name { color: white; font-size: 1.5rem; display: block; margin-bottom: 1rem; }
+        .footer-desc { margin-top: 1rem; line-height: 1.8; color: #94a3b8; font-size: 0.95rem; }
+        .footer-links h4 { color: white; margin-bottom: 1.5rem; font-size: 1.05rem; }
+        .footer-links ul { display: flex; flex-direction: column; gap: 0.75rem; }
+        .footer-links a { color: #94a3b8; font-size: 0.95rem; }
+        .footer-links a:hover { color: var(--primary); padding-left: 4px; }
+        .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid #334155; color: #64748b; font-size: 0.9rem; }
+
+        /* Toast */
+        .toast-container { position: fixed; bottom: 20px; right: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px; pointer-events: none; }
+        .toast { background: var(--bg-surface); color: var(--text-main); padding: 1rem 1.5rem; border-radius: var(--radius-sm); box-shadow: var(--shadow-lg); border-left: 4px solid var(--primary); animation: slideIn 0.3s ease; pointer-events: auto; display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem; }
+        @keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+        .toast.error { border-left-color: #ef4444; }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .nav-toggle { display: block; }
+            .primary-nav { position: fixed; top: var(--header-height); left: 0; width: 100%; background: var(--bg-surface); flex-direction: column; padding: 2rem; gap: 1.5rem; border-bottom: 1px solid var(--border-color); transform: translateY(-150%); transition: transform 0.3s ease; z-index: 99; box-shadow: var(--shadow-lg); }
+            .primary-nav.active { transform: translateY(0); }
+            .nav-list { flex-direction: column; align-items: center; gap: 1.5rem; width: 100%; }
+            .nav-actions { width: 100%; display: flex; justify-content: center; }
+            .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+            .about-image { height: 300px; }
+            .hero-title { font-size: 2.5rem; }
+            .hero-stats { gap: 1.5rem; }
+            .form-row { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+        }
+        @media (max-width: 600px) {
+            .hero-actions { flex-direction: column; }
+            .hero-actions .btn { width: 100%; }
+            .hero-stats { flex-direction: column; gap: 1rem; align-items: flex-start; }
+            .payment-methods { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .social-links { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#home" class="brand-logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="8" fill="#10b981"/>
+                    <path d="M16 8C12 8 9 11 9 15C9 20 16 26 16 26C16 26 23 20 23 15C23 11 20 8 16 8Z" fill="white"/>
+                    <path d="M14 14H18V18H14V14Z" fill="#10b981"/>
+                </svg>
+                <span class="brand-name">GreenCare</span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav id="primary-nav" class="primary-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#doctors" class="nav-link">Doctors</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#booking" class="nav-link highlight">Book Now</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="home" class="hero-section">
+            <div class="hero-bg">
+                <video autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+                    <source src="assets/hero-video.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container hero-content">
+                <h1 class="hero-title">World-Class Healthcare,<br><span style="color: var(--primary);">Digitally Delivered</span></h1>
+                <p class="hero-subtitle">Connect with Pakistan's most trusted doctors. Book appointments instantly, consult from home, and get AI-powered health guidance.</p>
+                <div class="hero-actions">
+                    <a href="#doctors" class="btn btn-primary">Find a Doctor</a>
+                    <a href="#booking" class="btn btn-outline">Book Appointment</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item"><span class="stat-number">10+</span><span class="stat-label">Expert Doctors</span></div>
+                    <div class="stat-item"><span class="stat-number">500+</span><span class="stat-label">Happy Patients</span></div>
+                    <div class="stat-item"><span class="stat-number">24/7</span><span class="stat-label">AI Support</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container about-grid">
+                <div class="about-image-wrapper">
+                    <img src="assets/about.jpg" alt="Dr Muhammad Ali Founder" class="about-image">
+                    <div class="about-badge">
+                        <strong>FOUNDER</strong>
+                        <span>Muhammad Ali</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title" style="text-align: left; display: block;">About GreenCare</h2>
+                    <p class="lead">GreenCare Digital Hospital Pakistan is a digital healthcare platform founded by Muhammad Ali in Karachi.</p>
+                    <p>Our mission is to connect patients with trusted doctors across Pakistan and allow easy online appointment booking. We believe everyone deserves access to quality healthcare, regardless of location.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                            </div>
+                            <div>
+                                <h4>Our Mission</h4>
+                                <p>Serve Humanity through accessible digital healthcare.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                            </div>
+                            <div>
+                                <h4>Secure & Private</h4>
+                                <p>Your health data is protected with enterprise-grade security.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="powered-by">
+                        ✨ Powered by <strong>SmartVerse Studio</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="doctors" class="section doctors-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Expert Doctors</h2>
+                    <p class="section-subtitle">Verified specialists across Pakistan ready to provide world-class care.</p>
+                </div>
+                <div class="doctors-grid" id="doctors-grid">
+                    <div class="loading-spinner"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="section">
+            <div class="container booking-container">
+                <div class="booking-card">
+                    <h2 class="section-title" style="text-align: left; display: block;">Book Your Appointment</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Fill in the details below. We will confirm your slot via WhatsApp.</p>
+                    
+                    <form id="booking-form" class="booking-form" novalidate>
+                        <div class="form-group">
+                            <label for="doctor-select">Select Doctor *</label>
+                            <select id="doctor-select" name="doctor" required>
+                                <option value="" disabled selected>Choose a specialist...</option>
+                            </select>
+                            <span class="error-msg" id="doctor-error"></span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="book-date">Date *</label>
+                                <input type="date" id="book-date" name="date" required>
+                                <span class="error-msg" id="date-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="book-time">Time *</label>
+                                <select id="book-time" name="time" required>
+                                    <option value="" disabled selected>Select time...</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                </select>
+                                <span class="error-msg" id="time-error"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="patient-name">Your Name *</label>
+                            <input type="text" id="patient-name" name="name" placeholder="Enter your full name" required>
+                            <span class="error-msg" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="patient-phone">Phone Number *</label>
+                            <input type="tel" id="patient-phone" name="phone" placeholder="+92 300 1234567" required pattern="^\+92\d{10}$">
+                            <span class="error-msg" id="phone-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                            Confirm Booking
+                        </button>
+                    </form>
+
+                    <div id="booking-success" class="booking-success hidden">
+                        <div class="success-icon">✓</div>
+                        <h3 style="margin-bottom: 0.5rem; color: var(--secondary);">Appointment Requested!</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Please complete the payment of <strong>Rs 200</strong> to confirm.</p>
+                        <div class="payment-methods">
+                            <div class="payment-card">
+                                <span class="payment-label">JazzCash</span>
+                                <span class="payment-code">03272358384</span>
+                            </div>
+                            <div class="payment-card">
+                                <span class="payment-label">EasyPaisa</span>
+                                <span class="payment-code">034416958360</span>
+                            </div>
+                        </div>
+                        <a href="#" id="whatsapp-confirmation" class="btn btn-whatsapp btn-block" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                            Confirm via WhatsApp
+                        </a>
+                        <button id="new-booking" class="btn-text-link">Book another appointment</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section" style="background: var(--bg-surface-alt);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-subtitle">We are here to help you. Reach out through any channel.</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>Phone & WhatsApp</h3>
+                        <ul class="contact-list">
+                            <li>
+                                <a href="https://wa.me/923441695860" target="_blank" rel="noopener">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                    +92 344 1695860
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/923272358384" target="_blank" rel="noopener">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                    +92 327 2358384
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h3>Email Addresses</h3>
+                        <ul class="contact-list">
+                            <li><a href="mailto:muhammadalikn53@gmail.com"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> muhammadalikn53@gmail.com</a></li>
+                            <li><a href="mailto:greencontrolcenteraiagent@gmail.com"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> greencontrolcenteraiagent@gmail.com</a></li>
+                            <li><a href="mailto:smarttoolsuniverse2026@gmail.com"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> smarttoolsuniverse2026@gmail.com</a></li>
+                            <li><a href="mailto:digitalreadsstudio5@gmail.com"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> digitalreadsstudio5@gmail.com</a></li>
+                            <li><a href="mailto:contacttravelscope@gmail.com"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> contacttravelscope@gmail.com</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Social Media</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/share/1HtgWdb4eR/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </a>
+                            <a href="https://www.instagram.com/explorevista2025" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/muhammad-ali-kn-22505a28a" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                            <a href="https://t.me/Aiearnverse" target="_blank" rel="noopener" class="social-link" aria-label="Telegram">
+                                <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                            </a>
+                            <a href="https://yo.fan/smartworks" target="_blank" rel="noopener" class="social-link" aria-label="YoFan">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="brand-name">GreenCare</span>
+                    <p class="footer-desc">Digital healthcare platform connecting patients with trusted doctors across Pakistan. Founded by Muhammad Ali in Karachi.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#doctors">Doctors</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Our Projects</h4>
+                    <ul>
+                        <li><a href="https://smartverse-replica-project.lovable.app/" target="_blank" rel="noopener">SmartVerse Studio</a></li>
+                        <li><a href="https://yo.fan/smartworks" target="_blank" rel="noopener">YoFan</a></li>
+                        <li><a href="#">Travel Scope 360</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> GreenCare Digital Hospital Pakistan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const doctors = [
+                { id: 1, name: "Prof Dr Bashir Hanif", spec: "Cardiology", loc: "Karachi - Tabba Heart Institute", fee: 3000, wa: "923111222398" },
+                { id: 2, name: "Dr Sohail Abrar", spec: "Cardiology", loc: "Karachi - NICVD", fee: 2500, wa: "923111222398" },
+                { id: 3, name: "Prof Dr Muhammad Azhar", spec: "Surgery", loc: "Lahore - PIC", fee: 3000, wa: "923111222398" },
+                { id: 4, name: "Dr Ayesha Malik", spec: "Gynecology", loc: "Lahore - Doctors Hospital", fee: 2500, wa: "923111222398" },
+                { id: 5, name: "Prof Dr Hamed Khan", spec: "Orthopedics", loc: "Peshawar - HMC", fee: 2500, wa: "923111222398" },
+                { id: 6, name: "Prof Dr Asim Pathan", spec: "Neurology", loc: "Islamabad - Shifa", fee: 5000, wa: "923111222398" },
+                { id: 7, name: "Prof Dr Khursheed Hassan", spec: "Medicine", loc: "Karachi", fee: 1500, wa: "923094442927" },
+                { id: 8, name: "Prof Dr Muhammad Yaqoob Ahmedani", spec: "Psychiatry", loc: "Karachi", fee: 2000, wa: "923111222398" },
+                { id: 9, name: "Prof Dr Nisar Ahmed Rao", spec: "Pediatrics", loc: "Karachi", fee: 2500, wa: "923111222398" },
+                { id: 10, name: "Dr Hamed Ali", spec: "Dentist", loc: "Karachi - Hamed Dental", fee: 2000, wa: "923401165870" }
+            ];
+
+            const els = {
+                navToggle: document.querySelector('.nav-toggle'),
+                primaryNav: document.getElementById('primary-nav'),
+                themeToggle: document.getElementById('theme-toggle'),
+                doctorsGrid: document.getElementById('doctors-grid'),
+                doctorSelect: document.getElementById('doctor-select'),
+                bookingForm: document.getElementById('booking-form'),
+                bookingSuccess: document.getElementById('booking-success'),
+                whatsappConfirmation: document.getElementById('whatsapp-confirmation'),
+                newBookingBtn: document.getElementById('new-booking'),
+                yearSpan: document.getElementById('year'),
+                toastContainer: document.getElementById('toast-container')
+            };
+
+            const showToast = (message, type = 'success') => {
+                const toast = document.createElement('div');
+                toast.className = `toast toast-${type}`;
+                toast.innerHTML = type === 'success' ? `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> ${message}` : `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg> ${message}`;
+                els.toastContainer.appendChild(toast);
+                setTimeout(() => { toast.style.opacity = '0'; setTimeout(() => toast.remove(), 300); }, 3500);
+            };
+
+            const initTheme = () => {
+                const savedTheme = localStorage.getItem('theme') || 'light';
+                document.documentElement.setAttribute('data-theme', savedTheme);
+                els.themeToggle.addEventListener('click', () => {
+                    const current = document.documentElement.getAttribute('data-theme');
+                    const next = current === 'light' ? 'dark' : 'light';
+                    document.documentElement.setAttribute('data-theme', next);
+                    localStorage.setItem('theme', next);
+                });
+            };
+
+            const initNav = () => {
+                els.navToggle.addEventListener('click', () => {
+                    const isExpanded = els.navToggle.getAttribute('aria-expanded') === 'true';
+                    els.navToggle.setAttribute('aria-expanded', !isExpanded);
+                    els.primaryNav.classList.toggle('active');
+                });
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        els.navToggle.setAttribute('aria-expanded', 'false');
+                        els.primaryNav.classList.remove('active');
+                    });
+                });
+            };
+
+            const renderDoctors = () => {
+                if (!els.doctorsGrid) return;
+                els.doctorsGrid.innerHTML = '';
+                doctors.forEach(doc => {
+                    const card = document.createElement('article');
+                    card.className = 'doctor-card';
+                    card.innerHTML = `
+                        <div class="doctor-info">
+                            <h3>${doc.name}</h3>
+                            <p class="doctor-location">📍 ${doc.loc}</p>
+                        </div>
+                        <div class="doctor-fee">Rs ${doc.fee}</div>
+                        <div class="doctor-actions">
+                            <button class="btn btn-primary btn-sm btn-book" data-id="${doc.id}">Book Now</button>
+                            <a href="https://wa.me/${doc.wa}" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Chat</a>
+                        </div>
+                    `;
+                    els.doctorsGrid.appendChild(card);
+                    const option = document.createElement('option');
+                    option.value = doc.id;
+                    option.textContent = `${doc.name} - ${doc.spec} (Rs ${doc.fee})`;
+                    els.doctorSelect.appendChild(option);
+                });
+            };
+
+            const handleBooking = (e) => {
+                e.preventDefault();
+                const form = e.target;
+                const formData = new FormData(form);
+                const data = Object.fromEntries(formData);
+                let isValid = true;
+                
+                if (!data.doctor) { document.getElementById('doctor-error').textContent = 'Please select a doctor'; isValid = false; } else document.getElementById('doctor-error').textContent = '';
+                if (!data.date) { document.getElementById('date-error').textContent = 'Please select a date'; isValid = false; } else document.getElementById('date-error').textContent = '';
+                if (!data.time) { document.getElementById('time-error').textContent = 'Please select a time'; isValid = false; } else document.getElementById('time-error').textContent = '';
+                if (!data.name || data.name.length < 3) { document.getElementById('name-error').textContent = 'Enter a valid name'; isValid = false; } else document.getElementById('name-error').textContent = '';
+                if (!data.phone || !/^\+92\d{10}$/.test(data.phone)) { document.getElementById('phone-error').textContent = 'Format: +923001234567'; isValid = false; } else document.getElementById('phone-error').textContent = '';
+
+                if (!isValid) return;
+
+                const doc = doctors.find(d => d.id == data.doctor);
+                if (!doc) return;
+
+                const msg = `*New Appointment Request*%0A%0ADoctor: ${doc.name}%0ADate: ${data.date}%0ATime: ${data.time}%0APatient: ${data.name}%0APhone: ${data.phone}`;
+                els.whatsappConfirmation.href = `https://wa.me/${doc.wa}?text=${msg}`;
+                
+                form.classList.add('hidden');
+                els.bookingSuccess.classList.remove('hidden');
+                showToast('Appointment request created! Please pay Rs 200.');
+            };
+
+            const resetBooking = () => {
+                els.bookingForm.reset();
+                els.bookingForm.classList.remove('hidden');
+                els.bookingSuccess.classList.add('hidden');
+            };
+
+            const scrollToBooking = (docId) => {
+                if (docId) els.doctorSelect.value = docId;
+                document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+            };
+
+            const init = () => {
+                if (els.yearSpan) els.yearSpan.textContent = new Date().getFullYear();
+                const dateInput = document.getElementById('book-date');
+                if (dateInput) dateInput.setAttribute('min', new Date().toISOString().split('T')[0]);
+                
+                initTheme();
+                initNav();
+                renderDoctors();
+
+                els.bookingForm.addEventListener('submit', handleBooking);
+                els.newBookingBtn.addEventListener('click', resetBooking);
+
+                els.doctorsGrid.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('btn-book')) {
+                        const docId = e.target.getAttribute('data-id');
+                        scrollToBooking(docId);
+                    }
+                });
+            };
+
+            init();
+        });
+    </script>
+</body>
+</html>
